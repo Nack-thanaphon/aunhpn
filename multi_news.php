@@ -3,13 +3,7 @@
 
 
 
-<style>
-#loading {
-    text-align: center;
-    background: url('https://media3.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif?cid=790b761128118d7ab9c1e544d7f75e5855a94695b40492e3&rid=giphy.gif&ct=g') no-repeat center;
-    height: 150px;
-}
-</style>
+
 
 <div class="container">
     <div class="col-md-12">
@@ -63,8 +57,8 @@
                 </div>
 
             </div>
-            <div class="row p-2 my-2">
-                <div class="col-2 m-0 p-0 m-auto">
+            <div class=" p-0 m-0" id="news_update">
+                <!-- <div class="col-2 m-0 p-0 m-auto">
                     <img width="50" height="50"
                         src="https://images.unsplash.com/photo-1647597411979-b5e4a155281b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=433&q=80"
                         alt="">
@@ -72,7 +66,7 @@
                 <div class="col-10 m-0 p-0 text-start">
                     <strong class="p-0 m-0">Lorem ipsum dolor sit ametamet.</strong><br>
                     <small class="p-0 m-0">Last Updated: 23 Aug , 2021</small>
-                </div>
+                </div> -->
             </div>
 
             <div class="row p-2 my-2">
@@ -90,7 +84,6 @@
                                 <small class="p-0 m-0" id="news_date"></small>
                             </li> -->
                         </ul>
-
                     </div>
                 </div>
 
@@ -154,7 +147,7 @@ $(document).ready(function() {
                         <div class="card-body m-0 p-1 " style="font-size:1rem;">
 
                             <div class="col p-0 m-0 my-1">
-                                <small class="my-2 m-0 p-0">23 Aug , 2021</small>
+                                <small class="my-2 m-0 p-0">${data[i].date}</small>
                             </div>
                             <div class="col p-0 m-0 pb-3">
                                 <b >${data[i].name}</b>
@@ -171,6 +164,41 @@ $(document).ready(function() {
           
        `
                 $('#news_list').append(news);
+            };
+
+        },
+        error: function(err) {
+
+            $('#news').html('-ไม่มีข่าวสาร-');
+        }
+    })
+
+})
+$(document).ready(function() {
+
+    $.ajax({
+        type: "GET",
+        dataType: "json",
+        url: "https://www.info-aun-hpn.com/api/get_news.php",
+        data: {},
+        success: function(data) {
+            data = data.result;
+            for (var i = 0; i < data.length; i++) {
+                news_update = `
+                <div class="row p-0 m-0 my-2" id="news_update">
+                <div class="col-2 m-0 p-0 m-auto">
+                    <img width="50" height="50"
+                        src="https://images.unsplash.com/photo-1647597411979-b5e4a155281b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=433&q=80"
+                        alt="">
+                </div>
+                <div class="col-10 m-0 p-0 text-start">
+                    <strong class="p-0 m-0">${data[i].name}</strong><br>
+                    <small class="p-0 m-0">Last Updated: ${data[i].date}</small>
+                </div>
+                </div>
+          
+       `
+                $('#news_update').append(news_update);
             };
 
         },

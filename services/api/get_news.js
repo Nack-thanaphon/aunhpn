@@ -8,7 +8,7 @@ function newsrender() {
     $.ajax({
         type: "GET",
         dataType: "json",
-        url: "https://www.info-aun-hpn.com/api/get_news.php",
+        url: "https://www.info-aun-hpn.com/api/get_news_limit3.php",
         data: {},
         success: function(data) {
             data = data.result;

@@ -16,7 +16,7 @@
         <div class="col-12 col-md-7 card p-3 m-1">
             <h3 class="text-primary">ข่าวสารประจำเดือน</h3>
             <small class="text-secondary">aun-hpn : News find</small>
-            <div class="row my-4 m-0 p-0" id="news_list">
+            <div class="row my-4 m-0 p-0" id="news_result">
 
 
             </div>
@@ -68,6 +68,19 @@
                     <strong class="p-0 m-0">Lorem ipsum dolor sit ametamet.</strong><br>
                     <small class="p-0 m-0">Last Updated: 23 Aug , 2021</small>
                 </div>
+
+            </div>
+            <div class="row p-2 my-2">
+                <div class="col-2 m-0 p-0 m-auto">
+                    <img width="50" height="50"
+                        src="https://images.unsplash.com/photo-1647597411979-b5e4a155281b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=433&q=80"
+                        alt="">
+                </div>
+                <div class="col-10 m-0 p-0 text-start">
+                    <strong class="p-0 m-0">Lorem ipsum dolor sit ametamet.</strong><br>
+                    <small class="p-0 m-0">Last Updated: 23 Aug , 2021</small>
+                </div>
+
             </div>
 
             <div class="row p-2 my-2">
@@ -98,23 +111,16 @@ $(document).ready(function() {
     console.log(1)
     $.ajax({
         type: "POST",
-        dataType: 'text',
+        dataType: 'json',
         url: "https://www.info-aun-hpn.com/api/search_news.php",
         data: {
             month: month,
         },
-        success: function(response) {
-            const myJSON = JSON.parse(response);
+        success: function(data) {
+            data = data.result;
 
-            console.log(2)
-            console.log(response)
-            console.log(myJSON)
-
-
-            alert(response)
             var html = '';
-
-            for (var i = 0; i < myJSON.length; i++) {
+            for (var i = 0; i < data.length; i++) {
                 html += ` <div class="col-12 col-md-4 p-0 m-0">
                     <div class="card shadow-sm p-1 m-2">
                         <img class="card-img-top"
@@ -123,10 +129,10 @@ $(document).ready(function() {
                         <div class="card-body m-0 p-1 " style="font-size:1rem;">
 
                             <div class="col p-0 m-0 my-1">
-                                <small class="my-2 m-0 p-0">23 Aug , 2021</small>
+                                <small class="my-2 m-0 p-0">${data[i].n_create}</small>
                             </div>
                             <div class="col p-0 m-0 pb-3">
-                                <b${response.result[i].n_name}</b>
+                                <b>${data[i].n_name}</b>
                             </div>
 
                             <div class="btn btn-primary  p-0 my-2 w-100">
@@ -139,7 +145,7 @@ $(document).ready(function() {
                 </div>`;
 
             }
-            $("#news_list").html(html)
+            $("#news_result").append(html)
         },
 
         error: function(err) {
