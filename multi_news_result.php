@@ -3,14 +3,8 @@
 
 
 
-<style>
-#loading {
-    text-align: center;
-    background: url('https://media3.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif?cid=790b761128118d7ab9c1e544d7f75e5855a94695b40492e3&rid=giphy.gif&ct=g') no-repeat center;
-    height: 150px;
-}
-</style>
-
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
 <div class="container">
     <div class="col-md-12">
         <br />
@@ -23,6 +17,7 @@
             <h3 class="text-primary">ข่าวสารประจำเดือน</h3>
             <small class="text-secondary">aun-hpn : News find</small>
             <div class="row my-4 m-0 p-0" id="news_list">
+
 
             </div>
             <div class="row m-0 p-0 align-self-center">
@@ -81,14 +76,8 @@
                 </div>
 
                 <div class="row p-0 m-0 my-2">
-                    <div class="col-12 mx-auto ">
-                        <ul id="month_list">
-                            <!-- <li class="m-4" >
-                                <a href="">
-                                    <b class="p-0 m-0" id="news_title"></b>
-                                </a><br>
-                                <small class="p-0 m-0" id="news_date"></small>
-                            </li> -->
+                    <div class="col-12 m-auto px-3">
+
                         </ul>
 
                     </div>
@@ -104,49 +93,29 @@
 
 <script>
 $(document).ready(function() {
-
+    var baseUrl = (window.location).href; // You can also use document.URL
+    var month = baseUrl.substring(baseUrl.lastIndexOf('=') + 1);
+    console.log(1)
     $.ajax({
-        type: "GET",
-        dataType: "json",
-        url: "https://www.info-aun-hpn.com/api/news_by_month.php",
-
-        data: {},
-        success: function(data) {
-            data = data.result;
-            for (var i = 0; i < data.length; i++) {
-                news = `
-                <li class="m-2">
-                <a href="multi_news_result.php?q=${data[i].name}" >
-                <b class="p-0 m-0" id="news_title">${data[i].name}</b>
-                </a><br>
-                <small class="p-0 m-0" id="news_date"></small>
-                </li>`
-                $('#month_list').append(news);
-
-            };
+        type: "POST",
+        dataType: 'text',
+        url: "https://www.info-aun-hpn.com/api/search_news.php",
+        data: {
+            month: month,
         },
+        success: function(response) {
+            const myJSON = JSON.parse(response);
 
-        error: function(err) {
-            console.log("bad", err)
-
-        }
-    })
-})
-
+            console.log(2)
+            console.log(response)
+            console.log(myJSON)
 
 
-$(document).ready(function() {
+            alert(response)
+            var html = '';
 
-    $.ajax({
-        type: "GET",
-        dataType: "json",
-        url: "https://www.info-aun-hpn.com/api/get_news.php",
-        data: {},
-        success: function(data) {
-            data = data.result;
-            for (var i = 0; i < data.length; i++) {
-                news = `
-                <div class="col-12 col-md-4 p-0 m-0">
+            for (var i = 0; i < myJSON.length; i++) {
+                html += ` <div class="col-12 col-md-4 p-0 m-0">
                     <div class="card shadow-sm p-1 m-2">
                         <img class="card-img-top"
                             src="https://images.unsplash.com/photo-1635621259631-9eefa2c922cc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
@@ -157,38 +126,30 @@ $(document).ready(function() {
                                 <small class="my-2 m-0 p-0">23 Aug , 2021</small>
                             </div>
                             <div class="col p-0 m-0 pb-3">
-                                <b >${data[i].name}</b>
+                                <b${response.result[i].n_name}</b>
                             </div>
 
                             <div class="btn btn-primary  p-0 my-2 w-100">
-                                <a href="./single_news.php?id=${data[i].id}" class="text-primary" style="text-decoration: none;">
+                                <a href="./single_news.php?id=${data[i].n_id}" class="text-primary" style="text-decoration: none;">
                                     <p class="m-0 p-1 text-white  text-uppercase">Read more</p>
                                 </a>
                             </div>
                         </div>
                     </div>
-                </div>
-          
-       `
-                $('#news_list').append(news);
-            };
+                </div>`;
 
+            }
+            $("#news_list").html(html)
         },
-        error: function(err) {
 
-            $('#news').html('-ไม่มีข่าวสาร-');
+        error: function(err) {
+            console.log("bad", err)
+
         }
     })
-
 })
 </script>
 
-<div class="d-none d-sm-block">
-    <?php include './template/include/footer.php'; ?>
-</div>
-<?php
 
-include './template/include/script.php';
 
-?>
 </body>
