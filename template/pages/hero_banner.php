@@ -18,7 +18,7 @@
                     <!-- Button -->
                     <div class="mt-3">
                         <a id="readmore" href="./about.php" target="_blank" class="btn btn-primary p-sm-2 p-2">
-                            Readmore
+                            Learn More
                         </a>
                     </div>
                 </div>

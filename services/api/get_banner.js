@@ -29,7 +29,7 @@ function banner() {
 
         },
         error: function(err) {
-
+            $('#banner').html('-ไม่มีข่าวสาร-');
             console.log("bad", err)
         }
     })

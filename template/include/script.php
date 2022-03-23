@@ -1,10 +1,13 @@
 <a id="button"><i class="fas fa-chevron-up"></i></a>
 
 <script src="assets/js/main.js"></script>
+
+<script src="services/api/get_activity.js"></script>
 <script src="services/api/get_news.js"></script>
 <script src="services/api/map.js"></script>
 
 <script src="services/api/get_download.js"></script>
+<script src="services/api/get_newsletter.js"></script>
 <script src="services/api/get_banner.js"></script>
 <script src="services/api/covid.js"></script>
 </script>

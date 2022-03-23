@@ -2,11 +2,11 @@
     <div class=" col-12 col-sm-8 p-1">
         <div class=" col-12  m-0  p-sm-0 ">
             <div class="row m-0 py-3  text-white p-2 t_header">
-                <div class="col-8 col-sm-12  p-0  m-auto text-left">
-                    <h4 id="title" class="text-uppercase p-0 m-0 ">Update ข่าวสาร</h4>
+                <div class="col-8 col-sm-8  p-0  m-auto text-left">
+                    <h5 id="title" class="text-uppercase p-0 m-0 ">NEWS</h5>
                 </div>
-                <div class="col-4  p-0  m-auto text-right  d-sm-none d-block">
-                    <a class="text-white" href="">ดูเพิ่มเติม<i class="fas fa-plus"></i></a>
+                <div class="col-4 col-sm-4 p-0  m-auto text-right  ">
+                    <a class="text-white" href="./all_news.php"><i class="fas fa-plus"></i> See All</a>
                 </div>
 
             </div>
@@ -23,10 +23,10 @@
 
             <div class="row m-0 py-3 text-white p-2 t_header">
                 <div class="col-8  p-0  m-auto text-left">
-                    <h4 id="title" class="text-uppercase p-0 m-0 ">Download เอกสาร</h4>
+                    <h5 id="title" class="text-uppercase p-0 m-0 ">DOWNLOAD</h5>
                 </div>
                 <div class="col-4  p-0  m-auto text-right ">
-                    <a class="text-white" href="#">ดูเพิ่มเติม<i class="fas fa-plus"></i></a>
+                    <a class="text-white" href="./all_file.php"><i class="fas fa-plus"></i> See All</a>
                 </div>
             </div>
 

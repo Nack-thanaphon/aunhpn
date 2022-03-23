@@ -2,6 +2,9 @@
 <?php include './template/include/navbar.php'; ?>
 
 <body>
+    <input type="hidden" id="web_static" name="c_ip" value="<?php echo $_SERVER['REMOTE_ADDR']; ?>">
+
+    </ก>
     <div class="container">
         <div class="row">
             <div class="col-12 p-0 m-0">
@@ -28,16 +31,37 @@
                 <?php include "./template/pages/news.php" ?>
             </div>
             <div class="col-12 p-0 m-0 w-100">
-                <div id="activity_bar_header">
-                    <h2 class="p-0 m-0">Activities</h2>
-                </div>
+
                 <div class="col-12 col-sm-12 py-2 my-3 p-0 ">
                     <?php include "./template/pages/activity_bar.php"; ?>
+
                 </div>
             </div>
         </div>
     </div>
+
+
+
+
     <?php
     include './template/include/script.php';
     include "./template/include/footer.php"; ?>
 </body>
+
+
+<script>
+$(document).ready(function() {
+    let ip = $('#web_static').val();
+
+    $.ajax({
+        type: "POST",
+        dataType: "JSON",
+        url: "https://www.info-aun-hpn.com/api/get_ip.php",
+        data: {
+            ip: ip,
+        },
+    }).done(function(data) {
+        console.log(ip)
+    })
+})
+</script>
