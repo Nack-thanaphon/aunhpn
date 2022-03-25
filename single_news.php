@@ -3,7 +3,10 @@
 
 <head>
 
-    <!--  -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
     <?php
 
     include "./database/connect.php";
@@ -23,9 +26,7 @@
 
     <?php endforeach; ?>
 
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
     <link rel="icon" href="./img/logo/logo.png" />
     <link href="assets/css/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
@@ -46,8 +47,7 @@
 <body onload="singlenews();">
     <div class="container">
         <div class="row py-4">
-            <div class="col-12 p-0 m-0">
-            </div>
+
             <div class="col-md-9 mx-auto">
                 <nav aria-label="">
                     <div class="row d-none d-sm-block">
@@ -68,30 +68,26 @@
                     <div class="row d-flex justify-space-between">
 
                         <div class="col-6 col-sm-8 ">
-
                             <!-- Go to www.addthis.com/dashboard to customize your tools -->
                             <div class="addthis_inline_share_toolbox_4p75"></div>
-
-
-
                         </div>
 
                         <div class="col-6 col-sm-4 text-right">
-                            <p class="badge badge-pill badge-primary text-white">
-                                <i class="fas fa-calendar-day" aria-hidden="true"></i>
-                                January 1, 2022 </i>
+                            <p class="badge badge-pill badge-primary text-white p-1">
+                                <i class="fas fa-calendar-day" aria-hidden="true">
+                                </i>
+                                <i id="date"></i>
+
                             </p>
-                            <p style="font-size: 0.8rem;">
-                                <i class="fas fa-eye" aria-hidden="true">
-                                </i> จำนวนผู้อ่าน |</li><b id="news_views"></b> ครั้ง
+                            <p class="p-0 m-0 " style="font-size: 0.8rem;">
+                                <i class="fas fa-eye p-0 m-0 pr-2">
+                                </i>
+                                <i id="news_views"></i>
+                                |ครั้ง
                             </p>
                         </div>
-                        <div class="col-12 col-sm-6 text-right text-sm-left">
-
-                        </div>
-
-
                     </div>
+                    <hr class="py-2">
                     <div class="col-12 my-2 pb-5 p-0">
                         <div id="news_image" alt=""></div>
                         <div class="col-12 sm-12 w-100 p-0 m-0 mt-5" id="news_detail"></div>
@@ -118,7 +114,7 @@
         $.ajax({
             type: "POST",
             dataType: "json",
-            url: "https://www.info-mugh.com/api/news_viewscounter.php",
+            url: "https://www.info-aun-hpn.com/api/news_viewscounter.php",
             data: {
                 id: id,
             },
@@ -145,13 +141,15 @@
                 id: id,
             },
             success: function(data) {
-                $('meta[name=title]').attr('content', data[0].n_name);
-                $('#news_title').html('<h3 class="p-0 m-0">' + data[0].n_name + '</h3>');
+
+                $('#news_title').html('<h3 class="p-0 m-0">' + data[0].name + '</h3>');
                 $('#news_image').html(
                     '<img style="object-fit: cover; width:100%;"src="https://info-aun-hpn.com/bos/' +
-                    data[0].n_image + '"></img>');
-                $('#news_detail').html(data[0].n_detail);
-                $('#news_views').html(data[0].n_views);
+                    data[0].image + '"></img>');
+                $('#news_detail').html(data[0].detail);
+                $('#news_views').html(data[0].view);
+                $('#date').append(data[0].date);
+
                 console.log("good", err)
 
             },

@@ -27,9 +27,9 @@
             <!-- Grid column -->
 
             <!-- Grid column -->
-            <div class="col-12 col-sm-2 mx-auto pb-3  text-align-start">
-                <!-- Links -->
-                <strong class="text-uppercase fw-bold mb-4">
+            <!-- <div class="col-12 col-sm-2 mx-auto pb-3  text-align-start"> -->
+            <!-- Links -->
+            <!-- <strong class="text-uppercase fw-bold mb-4">
                     Shortcut Link
                 </strong>
                 <p>
@@ -47,20 +47,25 @@
                 <p>
                     <a href="./all_newsletter.php" class="text-reset">Newsletter</a>
                 </p>
-            </div>
+            </div> -->
             <!-- Grid column -->
 
             <!-- Grid column -->
             <div class="col-12 col-sm-3 mx-auto pb-3   text-align-start">
                 <!-- Links -->
                 <strong class="text-uppercase fw-bold mb-4">
-                    Contact
+                    <i class="fas fa-home "> Contact</i>
                 </strong>
-                <p><i class="fas fa-home me-3"></i> ASEAN Institute for Health Development, 999 Salaya
+                <p>ASEAN Institute for Health Development, 999 Salaya
                     Phuttamonthon, Nakon Pathom, 73170 THAILAND</p>
 
+            </div>
+            <div class="col-12 col-sm-3 mx-auto pb-3   text-align-start">
+                <strong class="text-uppercase fw-bold mb-4">
+                    <i class="fas fa-envelope "> EMAIL</i>
+                </strong>
+
                 <p>
-                    <i class="fas fa-envelope  my-1"> EMAIL</i><br>
                     aunhpn@mahidol.ac.th <br>
                     thiprada.kon@mahidol.ac.th <br>
                     jariya.srk@mahidol.ac.th
@@ -69,6 +74,7 @@
                 <p><i class="fas fa-mobile  me-3"></i></i> +662-4419044</p>
                 <p><i class="fas fa-print me-3"></i> 02-441-9044</p>
             </div>
+
             <!-- Grid column -->
         </div>
         <!-- Grid row -->
