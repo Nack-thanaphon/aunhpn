@@ -1,5 +1,5 @@
-<?php include './template/include/header.php'; ?>
-<?php include './template/include/navbar.php'; ?>
+<?php include './include/header.php'; ?>
+<?php include './include/navbar.php'; ?>
 
 
 
@@ -11,15 +11,14 @@
         </div>
     </div>
     <div class="row my-5 p-0  d-flex justify-content-between">
-        <div class="col-12 col-md-7 card p-3 m-1">
+        <div class="col-12 col-md-7 card p-3 mb-3">
 
             <h3 class="text-primary text-left">ข่าวสารประจำเดือน</h3>
             <h6 id="news_year" class="text-primary"></h6>
 
             <small class="text-secondary">News Update : Asean University Health Promotion Network</small>
             <!-- <div class="col-md-3 text-right"><b>Total Data - <span id="total_data"></span></b></div> -->
-            <input type="hidden" name="search" class="form-control" id="search" placeholder="Search Here"
-                onkeyup="load_data(this.value);" />
+            <input type="hidden" name="search" class="form-control" id="search" placeholder="Search Here" onkeyup="load_data(this.value);" />
 
 
             <div class="row my-4 m-0 p-0" id="news_result">
@@ -45,7 +44,7 @@
             </div>
         </div>
         <div class="col-12 col-md-4 card p-3 ">
-            <?php include './template/include/aside.php' ?>
+            <?php include './include/aside.php' ?>
         </div>
     </div>
 </div>
@@ -53,57 +52,43 @@
 
 
 <script>
-$(document).ready(function() {
-    var baseUrl = (window.location).href; // You can also use document.URL
-    var month = baseUrl.substring(baseUrl.lastIndexOf('=') + 1);
-    console.log(1)
-    $.ajax({
-        type: "POST",
-        dataType: 'json',
-        url: "https://www.info-aun-hpn.com/api/search_news.php",
-        data: {
-            month: month,
-        },
-        success: function(data) {
+    $(document).ready(function() {
+        var baseUrl = (window.location).href; // You can also use document.URL
+        var month = baseUrl.substring(baseUrl.lastIndexOf('=') + 1);
+        console.log(1)
+        $.ajax({
+            type: "POST",
+            dataType: 'json',
+            url: "https://www.info-aun-hpn.com/api/search_news.php",
+            data: {
+                month: month,
+            },
+            success: function(data) {
 
 
-            var html = '';
-            for (var i = 0; i < data.length; i++) {
-                html += `<div class="col-12 col-md-4 p-0 m-0">
-                    <div class="card shadow-sm p-1 m-2">
-                        <img class="card-img-top"
-                            src="https://www.info-aun-hpn.com/bos/${data[i].image}"
-                            alt="">
-                        <div class="card-body m-0 p-1 " style="font-size:1rem;">
+                var html = '';
+                for (var i = 0; i < data.length; i++) {
+                    html += `         <div class=" col-12 col-sm-4 p-2 m-0 my-1 news-card-all">
+                <a href="./single_news.php?id=${data[i].id}" data-id="${data[i].id}" id="singlenews"
+                class="btn col-12 p-0 m-0 "> 
+                  <img class="card-img-top" src="https://info-aun-hpn.com/bos/${data[i].image}"alt="${data[i].name}">
+                </a>
+                <p class="badge badge-pill badge-primary m-0 ">${data[i].date}</p>
+                <strong class="py-1 name">${data[i].name}</strong>
+            </div>`;
 
-                            <div class="col p-0 m-0 my-1">
-                                <small class="my-2 m-0 p-0">${data[i].date}</small>
-                            </div>
-                            <div class="col p-0 m-0 pb-3">
-                            <p class="card-title news">${data[i].name}</p>
-                            </div>
+                    $("#news_year").append(data[i].year)
+                }
+                $("#news_result").append(html)
 
-                            <div class="btn btn-primary  p-0 my-1 w-100">
-                                <a href="./single_news.php?id=${data[i].id}" class="text-primary" style="text-decoration: none;">
-                                    <p class="m-0 p-1 text-white  text-uppercase">Read more</p>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>`;
+            },
 
-                $("#news_year").append(data[i].year)
+            error: function(err) {
+                console.log("bad", err)
+
             }
-            $("#news_result").append(html)
-
-        },
-
-        error: function(err) {
-            console.log("bad", err)
-
-        }
+        })
     })
-})
 </script>
 
 

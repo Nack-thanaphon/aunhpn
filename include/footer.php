@@ -1,6 +1,5 @@
 <!-- Footer -->
 <footer class="text-start text-lg-start pt-2">
-
     <div class="container text-start text-md-start mt-5">
         <!-- Grid row -->
         <div class="row mt-3">
@@ -8,11 +7,11 @@
             <div class="col-12 col-sm-6 mx-auto pb-3 ">
                 <div class="row ">
                     <div class="col-12 col-sm-12 mx-auto pb-3 text-start">
-                        <strong class="text-uppercase fw-bold mb-4">Supported by</strong>
+                        <h6 class="text-uppercase fw-bold mb-4">Supported by</h6>
                     </div>
-                    <div class="col-12 col-sm-12 mx-auto pb-3 text-start">
+                    <div class="col-12 col-sm-12 mx-auto pb-3  text-start">
                         <img src="./img/logo/support.png" width="100%" height="auto" alt="">
-                        <p class="py-3">AUN–HPN is a regional network of people and universities working towards a
+                        <p class="py-5">AUN–HPN is a regional network of people and universities working towards a
                             better and
                             healthier society. HPN (Health Promotion Network) is a thematic network of AUN (ASEAN
                             University Network).
@@ -27,45 +26,37 @@
             <!-- Grid column -->
 
             <!-- Grid column -->
-            <!-- <div class="col-12 col-sm-2 mx-auto pb-3  text-align-start"> -->
-            <!-- Links -->
-            <!-- <strong class="text-uppercase fw-bold mb-4">
+            <div class="col-12 col-sm-2 mx-auto pb-3  text-align-start">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">
                     Shortcut Link
-                </strong>
+                </h6>
                 <p>
-                    <a href="./contact.php" class="text-reset">Contact us</a>
+                    <a href="./contact.php" class="text-reset"><b>Contact us</b></a>
                 </p>
                 <p>
-                    <a href="./about.php" class="text-reset">Who we are</a>
+                    <a href="./about.php" class="text-reset"><b>Who we are</b></a>
                 </p>
                 <p>
-                    <a href="./about.php" class="text-reset">Our goal</a>
+                    <a href="./about.php" class="text-reset"><b>Our goal</b></a>
                 </p>
                 <p>
-                    <a href="#" class="text-reset">Research</a>
+                    <a href="./all_newsletter.php" class="text-reset"><b>Newsletter</b></a>
                 </p>
-                <p>
-                    <a href="./all_newsletter.php" class="text-reset">Newsletter</a>
-                </p>
-            </div> -->
+            </div>
             <!-- Grid column -->
 
             <!-- Grid column -->
             <div class="col-12 col-sm-3 mx-auto pb-3   text-align-start">
                 <!-- Links -->
-                <strong class="text-uppercase fw-bold mb-4">
-                    <i class="fas fa-home "> Contact</i>
-                </strong>
-                <p>ASEAN Institute for Health Development, 999 Salaya
+                <h6 class="text-uppercase fw-bold mb-4">
+                    Contact
+                </h6>
+                <p><i class="fas fa-home me-3"></i> ASEAN Institute for Health Development, 999 Salaya
                     Phuttamonthon, Nakon Pathom, 73170 THAILAND</p>
 
-            </div>
-            <div class="col-12 col-sm-3 mx-auto pb-3   text-align-start">
-                <strong class="text-uppercase fw-bold mb-4">
-                    <i class="fas fa-envelope "> EMAIL</i>
-                </strong>
-
                 <p>
+                    <i class="fas fa-envelope  my-1"> EMAIL</i><br>
                     aunhpn@mahidol.ac.th <br>
                     thiprada.kon@mahidol.ac.th <br>
                     jariya.srk@mahidol.ac.th
@@ -74,7 +65,6 @@
                 <p><i class="fas fa-mobile  me-3"></i></i> +662-4419044</p>
                 <p><i class="fas fa-print me-3"></i> 02-441-9044</p>
             </div>
-
             <!-- Grid column -->
         </div>
         <!-- Grid row -->
@@ -86,7 +76,7 @@
         <!-- Left -->
         <div class="me-5 d-none d-lg-block">
             © 2021 Copyright:
-            <a class="text-reset fw-bold" href="https://www.aun-hpn.or.th">Aun-Hpn.or.th</a>
+            <a class="text-reset fw-bold" href="https://www.aun-hpn.or.th"><strong>Aun-Hpn.or.th</strong></a>
         </div>
         <!-- Left -->
 

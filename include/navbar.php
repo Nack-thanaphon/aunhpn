@@ -40,7 +40,7 @@
                     <a class="nav-link text-white" href="partners.php">Partners</a>
                 </li>
                 <li class="nav-item text-white">
-                    <a class="nav-link text-white" href="all_activity.php">Activities</a>
+                    <a class="nav-link text-white" href="activity.php">Activities</a>
                 </li>
 
                 <li class="nav-item dropdown">
@@ -48,6 +48,7 @@
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Download
                     </a>
+
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item" href="./img/file/Healthy University Framework Final_2.pdf"
                             target="blank">AUN Healthy University Framework</a>
@@ -56,12 +57,12 @@
                             OrganizationProfile</a>
                         <a class="dropdown-item" href="./img/file/HursManualversion2021_3.pdf" target="blank">Hurs
                             Manual(2021)</a>
-                        <a class="dropdown-item" href="#">Research</a>
-                        <a class="dropdown-item" href="./all_newsletter.php">Newsletter</a>
+                        <a class="dropdown-item" href="newsletter.php">Newsletter</a>
+                        <a class="dropdown-item" href="file.php">Document Update</a>
                     </div>
                 </li>
                 <li class="nav-item text-white">
-                    <a class="nav-link text-white" href="./contact.php">Contact</a>
+                    <a class="nav-link text-white" href="contact.php">Contact</a>
                 </li>
                 <li class="nav-item text-white">
                     <a class="nav-link text-white" href="https://www.info-aun-hpn.com">Login</a>
@@ -73,8 +74,8 @@
 <div class="bottom-bar p-1 m-0">
     <ul>
         <li class="d-none d-sm-block"><a href="./">Home</a></li>
-        <li><a href="./all_newsletter.php">Newsletter</a></li>
-        <li><a href="./all_activity.php">Calendar</a></li>
-        <li><a href="./all_gallery.php">Gallery</a></li>
+        <li><a href="newsletter.php">Newsletter</a></li>
+        <li><a href="activity.php">Calendar</a></li>
+        <li><a href="gallery.php">Gallery</a></li>
     </ul>
 </div>

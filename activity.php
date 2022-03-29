@@ -1,10 +1,9 @@
-<?php include './template/include/header.php'; ?>
+<?php include './include/header.php'; ?>
 
-<?php include './template/include/navbar.php'; ?>
+<?php include './include/navbar.php'; ?>
 
 <div class="container">
-    <div class="row my-5 p-0  d-flex justify-content-between">
-
+    <div class="row my-5 m-2 p-0   d-flex justify-content-between">
 
         <div class="col-12 col-md-7 card p-3 m-1">
 
@@ -14,20 +13,15 @@
 
             </div>
 
-
-
         </div>
 
         <div class="col-12 col-md-4 card p-3 m-1">
-            <?php include './template/include/aside.php'; ?>
+            <?php include './include/aside.php'; ?>
         </div>
     </div>
 
 
 </div>
-
-
-
 
 <script>
 $(document).ready(function() {
@@ -76,11 +70,11 @@ $(document).ready(function() {
 </script>
 
 <div class="d-none d-sm-block">
-    <?php include './template/include/footer.php'; ?>
+    <?php include './include/footer.php'; ?>
 </div>
 <?php
 
-include './template/include/script.php';
+include 'include/script.php';
 
 ?>
 </body>

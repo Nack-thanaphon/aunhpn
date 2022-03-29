@@ -42,7 +42,7 @@
         src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </head>
 
-<?php include './template/include/navbar.php'; ?>
+<?php include './include/navbar.php'; ?>
 
 <body onload="singlenews();">
     <div class="container">
@@ -163,13 +163,12 @@
     </script>
     <!-- Go to www.addthis.com/dashboard to customize your tools -->
     <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-620dd9c449543115"></script>
-
     <div class="d-none d-sm-block">
-        <?php include './template/include/footer.php'; ?>
+        <?php include './include/footer.php'; ?>
     </div>
     <?php
 
-    include './template/include/script.php';
+    include 'include/script.php';
 
     ?>
 </body>
