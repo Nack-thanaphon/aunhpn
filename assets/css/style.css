@@ -424,21 +424,6 @@ body>.navbar-collapse .dropdown-toggle.disabled:focus {
 
 /* Website Logo  adn detail*/
 
-.navbar-brand {
-    display: flex;
-    size: 18px!important;
-    color: white !important;
-}
-
-.navbar-detail {
-    margin: 0 20px;
-}
-
-.navbar-brand img {
-    width: 100%;
-    height: 40px;
-}
-
 .navbar-brand p {
     margin: 0;
     font-size: 0.8rem;
@@ -1278,4 +1263,12 @@ footer a {
 #news_back {
     text-decoration: none;
     color: #e3e3e3;
+}
+
+.paginate_button {
+    padding: 3px !important;
+}
+
+#gallery_tbl {
+    margin-bottom: 20px !important;
 }

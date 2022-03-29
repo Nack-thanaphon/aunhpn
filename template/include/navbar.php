@@ -18,10 +18,10 @@
 <nav class="navbar navbar-expand-md navbar-light bg-dark text-white  py-4" id="navbar-bg">
 
     <div class="container ">
-        <a class="navbar-brand " href="./">
+        <a class="navbar-brand d-flex justify-content-between" href="./">
             <!-- <img class="d-none d-sm-block" src="./img/logo/logo2.png" alt=""> -->
-            <img class="d-block" src="./img/logo/Logo.png" alt="">
-            <div class="navbar-detail  d-block pl-3  m-0">
+            <img width="50px" height="50px" class="d-block" src="./img/logo/Logo.png" alt="">
+            <div class="navbar-detail text-white pl-3  m-0">
                 <b class="p-0 m-0">AUN-HPN</b><br>
                 <p class="p-0 m-0" style="font-size: 0.6rem;">Asean University Health Promotion Network</p>
             </div>
@@ -72,8 +72,9 @@
 </nav>
 <div class="bottom-bar p-1 m-0">
     <ul>
-        <li><a href="./">Home</a></li>
+        <li class="d-none d-sm-block"><a href="./">Home</a></li>
         <li><a href="./all_newsletter.php">Newsletter</a></li>
         <li><a href="./all_activity.php">Calendar</a></li>
+        <li><a href="./all_gallery.php">Gallery</a></li>
     </ul>
 </div>
