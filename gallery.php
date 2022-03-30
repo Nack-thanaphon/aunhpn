@@ -11,12 +11,12 @@
             <small class="text-secondary">Gallery : Asean University Health Promotion Network</small>
             <div class="row my-4 m-0 p-0">
 
-                <table class="table table-hover">
+                <table class="table table-hover text-center">
                     <thead>
                         <tr>
                             <th scope="col" width="10%">Date</th>
-                            <th scope="col" width="70%">Activity</th>
-                            <th scope="col" width="20%">Photo</th>
+                            <th scope="col" width="60%">Activity</th>
+                            <th scope="col" width="30%">Preview</th>
                         </tr>
                     </thead>
                     <tbody id="gallery_tbl">
@@ -57,7 +57,7 @@ $(document).ready(function() {
                         <td>${data[i].name}</td>
                         <td>
                             <a class="btn-btn-success" href="single_gallery.php?id=${data[i].id}">
-                                <i class="fas fa-image"></i>
+                                <i class="fas fa-eye"></i>
                             </a>
                         </td>
             

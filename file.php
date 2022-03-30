@@ -68,9 +68,6 @@ $(document).ready(function() {
     }).fail(function() {
 
     })
-
-
-
 })
 </script>
 
