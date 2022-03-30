@@ -37,16 +37,18 @@ $(document).ready(function() {
                 news = `
                 <div class=" col-12 bg-white mb-3 p-1 ">
                 <div class="row p-0 m-0">
-                    <div class="col-4 text-center p-0 mx-auto">   
+                    <div class="col-4 text-center p-0 mx-auto">
+                    <a href="./single_activity.php?event=${data[i].id}" class="text-reset">
                         <p class="fa fa-calendar-check " style="font-size:5.5rem;"></p>
+                        </a>
                     </div>
                     <div class="col-7 m-0 p-0 mx-auto">
                         <strong class="m-0 p-0" >${data[i].type}</strong>
                         <p class="m-0 p-0" >${data[i].title}</p>
                         <ul class="list-inline">
                             <li class="list-inline-item text-primary">${data[i].end_date}</li><br>
-                            <li class="list-inline-item"><i class="fa fa-clock" aria-hidden="true"></i> ${data[i].start_time} - ${data[i].end_time} </li>
-                            <li class="list-inline-item"><i class="fa fa-location-arrow" aria-hidden="true"></i> ${data[i].address}</li>
+                            <li class="list-inline-item"><i class="fa fa-clock"></i> ${data[i].start_time} - ${data[i].end_time} </li>
+                            <li class="list-inline-item"><i class="fa fa-location-arrow text-danger"></i> ${data[i].address}</li>
                         </ul>
                     </div>
                     </div>
