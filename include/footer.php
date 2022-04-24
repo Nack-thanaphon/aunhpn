@@ -1,4 +1,5 @@
 <!-- Footer -->
+<div id="cookieWow"></div>
 <footer class="text-start text-lg-start pt-2">
     <div class="container text-start text-md-start mt-5">
         <!-- Grid row -->

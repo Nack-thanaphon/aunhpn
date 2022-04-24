@@ -762,12 +762,13 @@ footer a {
 }
 
 footer p {
-    color: #3059fb !important;
+    color: var(--third) !important;
     font-weight: 400;
+    font-weight: bolder;
 }
 
 footer b {
-    color: #3059fb !important;
+    color: #666666 !important;
     padding: 0%;
 }
 
