@@ -10,7 +10,7 @@
                     <div class="col-12 col-sm-12 mx-auto pb-3 text-start">
                         <h6 class="text-uppercase fw-bold mb-4">Supported by</h6>
                     </div>
-                    <div class="col-12 col-sm-12 mx-auto pb-3  text-start">
+                    <div class="col-12 col-sm-12 mx-auto pb-3  text-start text-dark">
                         <img src="./img/logo/support.png" width="100%" height="auto" alt="">
                         <p class="py-5">AUN–HPN is a regional network of people and universities working towards a
                             better and
@@ -27,22 +27,18 @@
             <!-- Grid column -->
 
             <!-- Grid column -->
-            <div class="col-12 col-sm-2 mx-auto pb-3  text-align-start">
+            <div class="col-12 col-sm-2 mx-auto pb-3  text-align-start ">
                 <!-- Links -->
                 <h6 class="text-uppercase fw-bold mb-4">
                     Shortcut Link
                 </h6>
-                <p>
-                    <a href="./contact.php" class="text-reset"><b>Contact us</b></a>
+                <a href="./contact.php" class="text-dark"><b>Contact us</b></a>
                 </p>
-                <p>
-                    <a href="./about.php" class="text-reset"><b>Who we are</b></a>
+                <a href="./about.php" class="text-dark"><b>Who we are</b></a>
                 </p>
-                <p>
-                    <a href="./about.php" class="text-reset"><b>Our goal</b></a>
+                <a href="./about.php" class="text-dark"><b>Our goal</b></a>
                 </p>
-                <p>
-                    <a href="./all_newsletter.php" class="text-reset"><b>Newsletter</b></a>
+                <a href="./all_newsletter.php" class="text-dark"><b>Newsletter</b></a>
                 </p>
             </div>
             <!-- Grid column -->
@@ -53,11 +49,11 @@
                 <h6 class="text-uppercase fw-bold mb-4">
                     Contact
                 </h6>
-                <p><i class="fas fa-home me-3"></i> ASEAN Institute for Health Development, 999 Salaya
+                <p> ASEAN Institute for Health Development, 999 Salaya
                     Phuttamonthon, Nakon Pathom, 73170 THAILAND</p>
 
                 <p>
-                    <i class="fas fa-envelope  my-1"> EMAIL</i><br>
+
                     aunhpn@mahidol.ac.th <br>
                     thiprada.kon@mahidol.ac.th <br>
                     jariya.srk@mahidol.ac.th

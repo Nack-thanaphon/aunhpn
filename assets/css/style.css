@@ -762,13 +762,13 @@ footer a {
 }
 
 footer p {
-    color: var(--third) !important;
+  
     font-weight: 400;
     font-weight: bolder;
 }
 
 footer b {
-    color: #666666 !important;
+
     padding: 0%;
 }
 
@@ -1053,4 +1053,20 @@ footer h6 {
 #month_list li {
     list-style: none;
     margin: 20px auto;
+}
+
+.main_card{
+   
+    background-color: rgba(2, 2, 2);
+    background-image: url('https://t3.ftcdn.net/jpg/03/02/38/66/360_F_302386659_pDdxdrMWAmRSRpMnnOFACei0YLV5rttW.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.main_card_bg{
+    background-color: rgba(2, 2, 2,0.5);
+}
+
+.patt:hover{
+    box-shadow: 2px 2px 8px 4px rgba(0, 0, 0, 0.1);
 }

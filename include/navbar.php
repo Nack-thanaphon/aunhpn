@@ -27,11 +27,10 @@
             </div>
         </a>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse  d-flex-md d-flex-none justify-content-md-end " id="navbarNavDropdown">
+        <div class="collapse navbar-collapse  text-uppercase  d-flex-md d-flex-none justify-content-md-end " id="navbarNavDropdown">
             <ul class="navbar-nav  text-white ">
                 <li class="nav-item active ">
                     <a class="nav-link text-white" href="about.php">Mission</span></a>
@@ -44,16 +43,13 @@
                 </li>
 
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Download
                     </a>
 
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="./img/file/Healthy University Framework Final_2.pdf"
-                            target="blank">AUN Healthy University Framework</a>
-                        <a class="dropdown-item" href="./img/file/AUN-HPN Organization Profile_2.pdf"
-                            target="blank">AUN-HPN
+                        <a class="dropdown-item" href="./img/file/Healthy University Framework Final_2.pdf" target="blank">AUN Healthy University Framework</a>
+                        <a class="dropdown-item" href="./img/file/AUN-HPN Organization Profile_2.pdf" target="blank">AUN-HPN
                             OrganizationProfile</a>
                         <a class="dropdown-item" href="./img/file/HursManualversion2021_3.pdf" target="blank">Hurs
                             Manual(2021)</a>
