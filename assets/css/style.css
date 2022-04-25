@@ -460,45 +460,34 @@ body>#overlay {
     text-overflow: ellipsis;
 }
 
-.items img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    margin-bottom: 10px;
-    transition: .2s;
-}
+
 
 .slick-prev,
 .slick-next {
     display: none !important;
 }
 
-.news-card {
-    overflow: hidden;
-    height: auto;
-    transition: .3s;
-}
 
-.news-date {
-    position: absolute;
-    top: 40px;
-    left: 40px;
-}
-
-.news-card img {
-    position: relative;
-    width: 100%;
-    object-fit: cover;
-    height: 250px;
-}
-
-.news-card:hover {
-    transform: scale(1.1);
-}
 
 .news-card__text-wrapper {
     padding: 0;
 }
+
+#singlenews{
+overflow: hidden;
+
+}
+#singlenews .img_new{
+    width: 100%;
+    height: 100%;
+   object-fit: cover;
+   transition: 0.3s;
+  
+}
+#singlenews .img_new:hover{
+    transform: scale(1.1);
+}
+
 
 .name {
     overflow: hidden;
@@ -1063,10 +1052,25 @@ footer h6 {
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+.member_card{
+    background-color: rgba(2, 2, 2);
+    background-image: url('https://media.istockphoto.com/photos/friendshipcheckhand-picture-id642566828?s=612x612');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.about_card{
+    background-color: rgba(2, 2, 2);
+    background-image: url('https://thumbs.dreamstime.com/b/healthy-lifestyle-fitness-sports-woman-running-sunrise-road-39709089.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 .main_card_bg{
     background-color: rgba(2, 2, 2,0.5);
 }
-
 .patt:hover{
     box-shadow: 2px 2px 8px 4px rgba(0, 0, 0, 0.1);
 }

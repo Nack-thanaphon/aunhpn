@@ -14,19 +14,23 @@
                                 <h4>Asean University Network - Health Promotion Network</h4>
                                 <div class="mb-5">AUN–HPN is a regional network of people and universities working towards a better and healthier society. HPN (Health Promotion Network) is a thematic network of AUN (ASEAN University Network).</div>
                                 <br>
-                                <button type="button" class="btn btn-outline-light p-2 col-12 col-sm-3">
+                                <a href="./about.php" class="btn btn-outline-light p-2 col-12 col-sm-3">
                                     <h5 class="m-0 p-0 text-uppercase">learn more</h5>
-                                </button>
+                                </a>
                             </div>
 
                         </div>
                     </div>
-                    <div class="col-12 col-sm-4  p-0 pl-0  pl-sm-3  ">
-                        <div class="row main_card_bg  h-100 m-0 p-0 patt  ">
-                            <div class="col-12 p-5 text-white text-center m-auto ">
-                                <h2 class="text-uppercase   font-weight-bold ">About us</h2>
-                                <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, cupiditate.</small>
-
+                    <div class="col-12 col-sm-4  p-0 pl-0  pl-sm-3   ">
+                        <div class="about_card h-100">
+                            <div class="row main_card_bg  h-100 m-0 p-0 patt  ">
+                                <div class="col-12 p-5 text-white text-center m-auto ">
+                                    <h2 class="text-uppercase   font-weight-bold ">About us</h2>
+                                    <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, cupiditate.</small>
+                                    <a href="./partners.php" class="btn btn-primary w-100 mt-5 p-2 text-center">
+                                        <p class="p-0 m-0 text-uppercase font-weight-bold"><i class="fas fa-right"></i>Our Goal</p>
+                                    </a>
+                                </div>
 
                             </div>
 
@@ -44,118 +48,140 @@
                         </div>
                     </div>
                     <div class="col-12 col-sm-4  p-0 pl-0  pl-sm-3 my-3 ">
-                        <div class="row main_card_bg m-0 h-100 p-0 patt text-center">
-                            <div class="col-12 m-auto py-5 py-sm-0  text-white  ">
-                                <h2 class="text-uppercase font-weight-bold ">our member</h2>
-                                <small>Lorem ipsum dolor sit amet.</small>
+                        <div class="member_card h-100">
+                            <div class="row main_card_bg m-0 h-100 p-0 patt text-center">
+                                <div class="col-12 m-auto   py-5 py-sm-0  text-white  ">
+                                    <h2 class="text-uppercase font-weight-bold ">our member</h2>
+                                    <small class="text-uppercase">Aun-hpn Membership</small>
 
 
-                                <div class="btn btn-primary w-100 my-2">
-                                    <p class="p-0 m-0 text-uppercase">full member</p>
+                                    <a href="./partners.php" class="btn btn-primary w-100 my-2 py-3 text-center">
+                                        <p class="p-0 m-0 text-uppercase font-weight-bold"><i class="fas fa-users"></i> full member</p>
+                                    </a>
+                                    <a href="./partners.php" class="btn btn-primary w-100 my-2 py-3 text-center">
+                                        <p class="p-0 m-0 text-uppercase font-weight-bold"><i class="fas fa-user-plus"></i> Associate member</p>
+                                    </a>
+
+                                    <br>
+
                                 </div>
-                                <div class="btn btn-primary w-100 my-2">
-                                    <p class="p-0 m-0 text-uppercase">Associate member</p>
-                                </div>
-
-                                <br>
 
                             </div>
 
                         </div>
                     </div>
                 </div>
-
                 <div class="row m-0 p-0">
                     <div class="col-12 col-sm-4  p-0 pl-0   my-3 ">
-                        <div class="row main_card_bg  h-100 m-0 p-0  patt">
-                            <div class="col-12 p-5 text-white  ">
-                                <h2 class="text-uppercase font-weight-bold">News update</h2>
-                                <ul class="p-2">
-                                    <li><span>10 dec 2020</span>
-                                        <br><a href="">Lorem ipsum dolor sit.</a>
-                                    </li>
-                                    <li><span>10 dec 2020</span>
-                                        <br><a href="">Lorem ipsum dolor sit.</a>
-                                    </li>
-                                    <li><span>10 dec 2020</span>
-                                        <br><a href="">Lorem ipsum dolor sit.</a>
-                                    </li>
-                                    <li><span>10 dec 2020</span>
-                                        <br><a href="">Lorem ipsum dolor sit.</a>
-                                    </li>
-                                    <li><span>10 dec 2020</span>
-                                        <br><a href="">Lorem ipsum dolor sit.</a>
-                                    </li>
-                                    <li><span>10 dec 2020</span>
-                                        <br><a href="">Lorem ipsum dolor sit.</a>
-                                    </li>
-
-                                </ul>
-
-                                <div class="btn btn-primary w-100">Read all</div>
+                        <div class="row bg-success  h-100 m-0 p-0  patt">
+                            <div class="col-12 p-5  text-white  ">
+                                <div class="row m-0  p-0 d-flex justify-content- mb-3">
+                                    <hr>
+                                    <div class="col-6 text-start m-0 p-0 ">
+                                        <h5 class="text-uppercase font-weight-bold p-0 m-0">Newsupdate</h5>
+                                    </div>
+                                    <div class="col-6 text-right m-0 p-0 ">
+                                        <a href="">SeeAll</a>
+                                    </div>
+                                </div>
+                                <div class="row p-0 m-0 " id="news">
+                                </div>
                             </div>
-
                         </div>
                     </div>
                     <div class="col-12 col-sm-4  p-0 pl-0  pl-sm-3 my-3 ">
-                        <div class="row main_card_bg  h-100 m-0 p-0  patt">
+                        <div class="row bg-secondary  h-100 m-0 p-0  patt">
                             <div class="col-12 p-5 text-white  ">
-                                <h2 class="text-uppercase font-weight-bold">Download</h2>
+                                <div class="row m-0 p-0 d-flex justify-content-between mb-3">
+                                    <hr>
+                                    <div class="col-6 text-start m-0 p-0 ">
+                                        <h5 class="text-uppercase font-weight-bold p-0 m-0">Download</h5>
+                                    </div>
+                                    <div class="col-6 text-right m-0 p-0 ">
+                                        <a href="">SeeAll</a>
+                                    </div>
+                                </div>
                                 <ul class="p-2">
-                                    <li><span>10 dec 2020</span>
-                                        <br><a href="">Lorem ipsum dolor sit.</a>
+                                    <li class="mb-2">
+                                        <small class="text-start m-0 badge badge-pill badge-primary">10 dec 2565</small>
+                                        <span>เอกสารงานประชุม</span>
+                                        <a href="" class="row m-0 p-0">
+                                            <p class="p-0 m-0 col-12 text-start">คู่มือการใช้งานเว็บไซต์คู่มือการใช้งานเว็บไซต์คู่มือการใช้งานเว็บไซต์</p>
+                                        </a>
                                     </li>
-                                    <li><span>10 dec 2020</span>
-                                        <br><a href="">Lorem ipsum dolor sit.</a>
+                                    <li class="mb-2">
+                                        <small class="text-start m-0 badge badge-pill badge-primary">10 dec 2565</small>
+                                        <span>เอกสารงานประชุม</span>
+                                        <a href="" class="row m-0 p-0">
+                                            <p class="p-0 m-0 col-12 text-start">คู่มือการใช้งานเว็บไซต์คู่มือการใช้งานเว็บไซต์คู่มือการใช้งานเว็บไซต์</p>
+                                        </a>
                                     </li>
-                                    <li><span>10 dec 2020</span>
-                                        <br><a href="">Lorem ipsum dolor sit.</a>
+                                    <li class="mb-2">
+                                        <small class="text-start m-0 badge badge-pill badge-primary">10 dec 2565</small>
+                                        <span>เอกสารงานประชุม</span>
+                                        <a href="" class="row m-0 p-0">
+                                            <p class="p-0 m-0 col-12 text-start">คู่มือการใช้งานเว็บไซต์คู่มือการใช้งานเว็บไซต์คู่มือการใช้งานเว็บไซต์</p>
+                                        </a>
                                     </li>
-                                    <li><span>10 dec 2020</span>
-                                        <br><a href="">Lorem ipsum dolor sit.</a>
+                                    <li class="mb-2">
+                                        <small class="text-start m-0 badge badge-pill badge-primary">10 dec 2565</small>
+                                        <span>เอกสารงานประชุม</span>
+                                        <a href="" class="row m-0 p-0">
+                                            <p class="p-0 m-0 col-12 text-start">คู่มือการใช้งานเว็บไซต์คู่มือการใช้งานเว็บไซต์คู่มือการใช้งานเว็บไซต์</p>
+                                        </a>
                                     </li>
-                                    <li><span>10 dec 2020</span>
-                                        <br><a href="">Lorem ipsum dolor sit.</a>
+                                    <li class="mb-2">
+                                        <small class="text-start m-0 badge badge-pill badge-primary">10 dec 2565</small>
+                                        <span>เอกสารงานประชุม</span>
+                                        <a href="" class="row m-0 p-0">
+                                            <p class="p-0 m-0 col-12 text-start">คู่มือการใช้งานเว็บไซต์คู่มือการใช้งานเว็บไซต์คู่มือการใช้งานเว็บไซต์</p>
+                                        </a>
                                     </li>
-                                    <li><span>10 dec 2020</span>
-                                        <br><a href="">Lorem ipsum dolor sit.</a>
-                                    </li>
-
                                 </ul>
-
-                                <div class="btn btn-primary w-100">Read all</div>
                             </div>
-
                         </div>
-
                     </div>
                     <div class="col-12 col-sm-4  p-0 pl-0  pl-sm-3 my-3 ">
-                        <div class="row main_card_bg  h-100 m-0 p-0  patt">
+                        <div class="row bg-success  h-100 m-0 p-0  patt">
                             <div class="col-12 p-5 text-white  ">
-                                <h2 class="text-uppercase font-weight-bold">Activity</h2>
+                                <div class="row m-0 p-0 d-flex justify-content-between mb-3">
+                                    <hr>
+                                    <div class="col-6 text-start m-0 p-0 ">
+                                        <h5 class="text-uppercase font-weight-bold p-0 m-0">Activity</h5>
+                                    </div>
+                                    <div class="col-6 text-right m-0 p-0 ">
+                                        <a href="">SeeAll</a>
+                                    </div>
+                                </div>
                                 <ul class="p-2">
-                                    <li><span>10 dec 2020</span>
-                                        <br><a href="">Lorem ipsum dolor sit.</a>
+                                    <li class="mb-2">
+                                        <small class="text-start m-0 badge badge-pill badge-primary"><span>ตั้งแต่วันที่ :</span> 10-15 dec 2565</small>
+                                        <p class="m-0 p-0">เรื่อง <span>ประชุมภายใน</span></p>
+                                        <a href="" class="row m-0 p-0">
+                                            <p class="p-0 m-0 col-12 text-start">คู่มือการใช้งานเว็บไซต์คู่มือการใช้งานเว็บไซต์คู่มือการใช้งานเว็บไซต์</p>
+                                        </a>
+                                        <small>สถานที่: <span>มหาวิทยาลัยมหิดล</span></small>
                                     </li>
-                                    <li><span>10 dec 2020</span>
-                                        <br><a href="">Lorem ipsum dolor sit.</a>
+                                    <li class="mb-2">
+                                        <small class="text-start m-0 badge badge-pill badge-primary"><span>ตั้งแต่วันที่ :</span> 10-15 dec 2565</small>
+                                        <p class="m-0 p-0">เรื่อง <span>ประชุมภายใน</span></p>
+                                        <a href="" class="row m-0 p-0">
+                                            <p class="p-0 m-0 col-12 text-start">คู่มือการใช้งานเว็บไซต์คู่มือการใช้งานเว็บไซต์คู่มือการใช้งานเว็บไซต์</p>
+                                        </a>
+                                        <small>สถานที่: <span>มหาวิทยาลัยมหิดล</span></small>
                                     </li>
-                                    <li><span>10 dec 2020</span>
-                                        <br><a href="">Lorem ipsum dolor sit.</a>
-                                    </li>
-                                    <li><span>10 dec 2020</span>
-                                        <br><a href="">Lorem ipsum dolor sit.</a>
-                                    </li>
-                                    <li><span>10 dec 2020</span>
-                                        <br><a href="">Lorem ipsum dolor sit.</a>
-                                    </li>
-                                    <li><span>10 dec 2020</span>
-                                        <br><a href="">Lorem ipsum dolor sit.</a>
+                                    <li class="mb-2">
+                                        <small class="text-start m-0 badge badge-pill badge-primary"><span>ตั้งแต่วันที่ :</span> 10-15 dec 2565</small>
+                                        <p class="m-0 p-0">เรื่อง <span>ประชุมภายใน</span></p>
+                                        <a href="" class="row m-0 p-0">
+                                            <p class="p-0 m-0 col-12 text-start">คู่มือการใช้งานเว็บไซต์คู่มือการใช้งานเว็บไซต์คู่มือการใช้งานเว็บไซต์</p>
+                                        </a>
+                                        <small>สถานที่: <span>มหาวิทยาลัยมหิดล</span></small>
                                     </li>
 
                                 </ul>
 
-                                <div class="btn btn-primary w-100">Read all</div>
+                                <!-- <div class="btn btn-primary w-100 text-uppercase font-weight-bold">Read all</div> -->
                             </div>
 
                         </div>
@@ -167,13 +193,14 @@
                             <div class="col-8 mx-auto  text-white  ">
                                 <h2 class="font-weight-bold text-uppercase mb-4">Search tool</h2>
                                 <div class="input-group">
-                                    <input type="text" class="form-control py-2
-                                    " placeholder="find this website">
+                                    <input type="text" class="form-control py-4 text-uppercase" placeholder="Find this website..">
                                 </div>
                             </div>
-                            <button class="col-6 mx-auto btn btn-primary p-2 my-3 w-100">
-                                <h4 class="text-uppercase font-weight-bold p-0 m-0">find now</h4>
-                            </button>
+                            <a href="./search_result.php" class="col-6 mx-auto btn btn-primary p-2 my-3 w-100">
+                                <h4 class="text-uppercase font-weight-bold p-0 m-0">
+                                    find now
+                                </h4>
+                            </a>
 
                         </div>
                     </div>
