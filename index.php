@@ -73,12 +73,12 @@
                 </div>
                 <div class="row m-0 p-0">
                     <div class="col-12 col-sm-4  p-0 pl-0   my-3 ">
-                        <div class="row bg-success  h-100 m-0 p-0  patt">
-                            <div class="col-12 p-5  text-white  ">
-                                <div class="row m-0  p-0 d-flex justify-content- mb-3">
+                        <div class="row bg-white  h-100 m-0 p-0  patt">
+                            <div class="col-12 p-3  text-white  ">
+                                <div class=" row m-0  p-0 d-flex justify-content- mb-3">
                                     <hr>
                                     <div class="col-6 text-start m-0 p-0 ">
-                                        <h5 class="text-uppercase font-weight-bold p-0 m-0">Newsupdate</h5>
+                                        <h5 class="text-uppercase font-weight-bold p-0 m-0 text-dark">Newsupdate</h5>
                                     </div>
                                     <div class="col-6 text-right m-0 p-0 ">
                                         <a href="">SeeAll</a>
@@ -90,12 +90,12 @@
                         </div>
                     </div>
                     <div class="col-12 col-sm-4  p-0 pl-0  pl-sm-3 my-3 ">
-                        <div class="row bg-secondary  h-100 m-0 p-0  patt">
-                            <div class="col-12 p-5 text-white  ">
+                        <div class="row bg-white  h-100 m-0 p-0  patt">
+                            <div class="col-12 p-3 text-white  ">
                                 <div class="row m-0 p-0 d-flex justify-content-between mb-3">
                                     <hr>
                                     <div class="col-6 text-start m-0 p-0 ">
-                                        <h5 class="text-uppercase font-weight-bold p-0 m-0">Download</h5>
+                                        <h5 class="text-uppercase font-weight-bold p-0 m-0 text-dark">Download</h5>
                                     </div>
                                     <div class="col-6 text-right m-0 p-0 ">
                                         <a href="">SeeAll</a>
@@ -104,35 +104,35 @@
                                 <ul class="p-2">
                                     <li class="mb-2">
                                         <small class="text-start m-0 badge badge-pill badge-primary">10 dec 2565</small>
-                                        <span>เอกสารงานประชุม</span>
+                                        <span class="text-dark">เอกสารงานประชุม</span>
                                         <a href="" class="row m-0 p-0">
                                             <p class="p-0 m-0 col-12 text-start">คู่มือการใช้งานเว็บไซต์คู่มือการใช้งานเว็บไซต์คู่มือการใช้งานเว็บไซต์</p>
                                         </a>
                                     </li>
                                     <li class="mb-2">
                                         <small class="text-start m-0 badge badge-pill badge-primary">10 dec 2565</small>
-                                        <span>เอกสารงานประชุม</span>
+                                        <span class="text-dark">เอกสารงานประชุม</span>
                                         <a href="" class="row m-0 p-0">
                                             <p class="p-0 m-0 col-12 text-start">คู่มือการใช้งานเว็บไซต์คู่มือการใช้งานเว็บไซต์คู่มือการใช้งานเว็บไซต์</p>
                                         </a>
                                     </li>
                                     <li class="mb-2">
                                         <small class="text-start m-0 badge badge-pill badge-primary">10 dec 2565</small>
-                                        <span>เอกสารงานประชุม</span>
+                                        <span class="text-dark">เอกสารงานประชุม</span>
                                         <a href="" class="row m-0 p-0">
                                             <p class="p-0 m-0 col-12 text-start">คู่มือการใช้งานเว็บไซต์คู่มือการใช้งานเว็บไซต์คู่มือการใช้งานเว็บไซต์</p>
                                         </a>
                                     </li>
                                     <li class="mb-2">
                                         <small class="text-start m-0 badge badge-pill badge-primary">10 dec 2565</small>
-                                        <span>เอกสารงานประชุม</span>
+                                        <span class="text-dark">เอกสารงานประชุม</span>
                                         <a href="" class="row m-0 p-0">
                                             <p class="p-0 m-0 col-12 text-start">คู่มือการใช้งานเว็บไซต์คู่มือการใช้งานเว็บไซต์คู่มือการใช้งานเว็บไซต์</p>
                                         </a>
                                     </li>
                                     <li class="mb-2">
                                         <small class="text-start m-0 badge badge-pill badge-primary">10 dec 2565</small>
-                                        <span>เอกสารงานประชุม</span>
+                                        <span class="text-dark">เอกสารงานประชุม</span>
                                         <a href="" class="row m-0 p-0">
                                             <p class="p-0 m-0 col-12 text-start">คู่มือการใช้งานเว็บไซต์คู่มือการใช้งานเว็บไซต์คู่มือการใช้งานเว็บไซต์</p>
                                         </a>
@@ -142,12 +142,12 @@
                         </div>
                     </div>
                     <div class="col-12 col-sm-4  p-0 pl-0  pl-sm-3 my-3 ">
-                        <div class="row bg-success  h-100 m-0 p-0  patt">
-                            <div class="col-12 p-5 text-white  ">
+                        <div class="row bg-white  h-100 m-0 p-0  patt">
+                            <div class="col-12 p-3 text-white  ">
                                 <div class="row m-0 p-0 d-flex justify-content-between mb-3">
                                     <hr>
                                     <div class="col-6 text-start m-0 p-0 ">
-                                        <h5 class="text-uppercase font-weight-bold p-0 m-0">Activity</h5>
+                                        <h5 class="text-uppercase font-weight-bold p-0 m-0 text-dark">Activity</h5>
                                     </div>
                                     <div class="col-6 text-right m-0 p-0 ">
                                         <a href="">SeeAll</a>
@@ -156,7 +156,7 @@
                                 <ul class="p-2">
                                     <li class="mb-2">
                                         <small class="text-start m-0 badge badge-pill badge-primary"><span>ตั้งแต่วันที่ :</span> 10-15 dec 2565</small>
-                                        <p class="m-0 p-0">เรื่อง <span>ประชุมภายใน</span></p>
+                                        <p class="m-0 p-0 text-dark">เรื่อง <span>ประชุมภายใน</span></p>
                                         <a href="" class="row m-0 p-0">
                                             <p class="p-0 m-0 col-12 text-start">คู่มือการใช้งานเว็บไซต์คู่มือการใช้งานเว็บไซต์คู่มือการใช้งานเว็บไซต์</p>
                                         </a>
@@ -164,7 +164,7 @@
                                     </li>
                                     <li class="mb-2">
                                         <small class="text-start m-0 badge badge-pill badge-primary"><span>ตั้งแต่วันที่ :</span> 10-15 dec 2565</small>
-                                        <p class="m-0 p-0">เรื่อง <span>ประชุมภายใน</span></p>
+                                        <p class="m-0 p-0 text-dark">เรื่อง <span>ประชุมภายใน</span></p>
                                         <a href="" class="row m-0 p-0">
                                             <p class="p-0 m-0 col-12 text-start">คู่มือการใช้งานเว็บไซต์คู่มือการใช้งานเว็บไซต์คู่มือการใช้งานเว็บไซต์</p>
                                         </a>
@@ -172,7 +172,7 @@
                                     </li>
                                     <li class="mb-2">
                                         <small class="text-start m-0 badge badge-pill badge-primary"><span>ตั้งแต่วันที่ :</span> 10-15 dec 2565</small>
-                                        <p class="m-0 p-0">เรื่อง <span>ประชุมภายใน</span></p>
+                                        <p class="m-0 p-0 text-dark">เรื่อง <span>ประชุมภายใน</span></p>
                                         <a href="" class="row m-0 p-0">
                                             <p class="p-0 m-0 col-12 text-start">คู่มือการใช้งานเว็บไซต์คู่มือการใช้งานเว็บไซต์คู่มือการใช้งานเว็บไซต์</p>
                                         </a>
