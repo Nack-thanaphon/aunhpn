@@ -24,10 +24,10 @@ function newsrender() {
                         </div>
                         <div class="col-8 m-0">
                         <img width="30px" height="20px" src="https://www.dol.go.th/lampang/PublishingImages/Pages/default/new.gif"alt="${data[i].name}">
-                            <span class="badge badge-secondary">${data[i].type}</span>
+                            <span class="badge badge-success m-0 p-1">${data[i].type}</span>
                             <br>
                             <small class="text-dark name">${data[i].name}</small>
-                            <br>
+                 
                             <small class="text-muted">${data[i].date}</small>
                         </div>
                     </div>

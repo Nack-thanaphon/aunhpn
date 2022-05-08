@@ -18,7 +18,7 @@ function activity() {
                 for (var i = 0; i < data.length; i++) {
                     $ac = `             
                         <li class="mb-3">
-                        <small>${data[i].end_date}</small> <br>
+                        <small class="text-primary">${data[i].end_date}</small> <br>
                         <small class="text-start m-0 p-0 text-secondary">Time : ${data[i].start_time} - ${data[i].end_time}</small>
                         
                         <a href="./single_activity.php?event=${data[i].id}" class="row m-0 p-0">

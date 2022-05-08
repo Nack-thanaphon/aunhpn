@@ -21,7 +21,8 @@
 
                         </div>
                     </div>
-                    <div class="col-12 col-sm-4  p-0 pl-0  pl-sm-3   ">
+                   
+                    <div class="col-12 col-sm-4  p-0 pl-0  pl-sm-3 ">
                         <div class="about_card h-100">
                             <div class="row main_card_bg  h-100 m-0 p-0 patt  ">
                                 <div class="col-12 p-5 text-white text-center m-auto ">
@@ -39,7 +40,7 @@
                     </div>
                 </div>
                 <div class="row m-0 p-0">
-                    <div class="col-12 col-sm-8 my-0  my-sm-3  ">
+                    <div class="col-12 col-sm-8 my-0  my-sm-3  d-none d-sm-block">
                         <div class="row " id="banner">
                             <div class="col-12 m-0 p-0 ">
                                 <div class="slideshow"></div>
@@ -77,7 +78,7 @@
                 <div class="row m-0 p-0">
                     <div class="col-12 col-sm-4  p-0 pl-0   my-3 ">
                         <div class="row bg-light  h-100 m-0 p-0  patt">
-                            <div class="col-12 p-5  text-dark  ">
+                            <div class="col-12 p- p-sm-4  text-dark  ">
                                 <div class="row m-0  p-0 d-flex justify-content- mb-3">
                                     <hr>
                                     <div class="col-6 text-start m-0 p-0 ">
@@ -94,7 +95,7 @@
                     </div>
                     <div class="col-12 col-sm-4  p-0 pl-0  pl-sm-3 my-3 ">
                         <div class="row bg-light  h-100 m-0 p-0  patt">
-                            <div class="col-12 p-5 text-dark  ">
+                            <div class="col-12 p- p-sm-4 text-dark  ">
                                 <div class="row m-0 p-0 d-flex justify-content-between mb-3">
                                     <hr>
                                     <div class="col-6 text-start m-0 p-0 ">
@@ -111,7 +112,7 @@
                     </div>
                     <div class="col-12 col-sm-4  p-0 pl-0  pl-sm-3 my-3 ">
                         <div class="row bg-light  h-100 m-0 p-0  patt">
-                            <div class="col-12 p-5 text-dark  ">
+                            <div class="col-12 p- p-sm-4 text-dark  ">
                                 <div class="row m-0 p-0 d-flex justify-content-between mb-3">
                                     <hr>
                                     <div class="col-6 text-start m-0 p-0 ">

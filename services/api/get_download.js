@@ -20,7 +20,7 @@ function download() {
             <li class="mb-3">
             <small class="text-start m-0 badge badge-pill badge-primary">${data[i].date}</small>
             <span>${data[i].group}</span>
-            <a href="" class="row m-0 p-0">
+            <a href="https://info-aun-hpn.com/bos/uploads/docs/${data[i].file}" class="row m-0 p-0">
                 <p class="p-0 m-0 col-12 text-start">${data[i].name}</p>
             </a>
         </li>
