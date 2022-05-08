@@ -22,7 +22,7 @@
 }
 
 body {
-    background-color: #F4F4F4;
+    background-color: #f0f0f0;
     font-family: 'Noto Sans Thai', sans-serif !important;
     font-family: 'Quicksand', sans-serif;
     top: 0px !important;
@@ -1055,7 +1055,7 @@ footer h6 {
 
 .member_card{
     background-color: rgba(2, 2, 2);
-    background-image: url('https://media.istockphoto.com/photos/friendshipcheckhand-picture-id642566828?s=612x612');
+    background-image: url('https://img.freepik.com/free-vector/solidarity-concept-illustration_114360-6286.jpg?t=st=1651978307~exp=1651978907~hmac=12927bd0bca4b83f0db5e703e182f98cae74206684afe25d9b038c50734ec732&w=900');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1063,7 +1063,7 @@ footer h6 {
 
 .about_card{
     background-color: rgba(2, 2, 2);
-    background-image: url('https://thumbs.dreamstime.com/b/healthy-lifestyle-fitness-sports-woman-running-sunrise-road-39709089.jpg');
+    background-image: url('https://img.freepik.com/free-vector/personal-goals-concept-illustration_114360-5616.jpg?t=st=1651978212~exp=1651978812~hmac=5de9ead876e8d0a6e8b945b8c4f262755cf906d850e61ffb5aaa412aac823f63&w=740');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1072,5 +1072,5 @@ footer h6 {
     background-color: rgba(2, 2, 2,0.5);
 }
 .patt:hover{
-    box-shadow: 2px 2px 8px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 1px 3px 3px rgba(0, 0, 0, 0.1);
 }

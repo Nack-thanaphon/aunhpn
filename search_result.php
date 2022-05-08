@@ -1,12 +1,61 @@
 <?php include './include/header.php'; ?>
 <?php include './include/navbar.php'; ?>
+<?php include './database/connect.php'; ?>
 
 <div class="container">
-    <div class="row my-5 m-2 p-0  d-flex justify-content-between">
-        <div class="col-12 col-md-7 card p-3 mb-2">
+    <div class="row p-0 my-2 m-0 d-flex justify-content-between">
+        <div class="col-12 col-md-12 col-sm-12 card  mb-2">
 
             <h6 class="text-secondary"> Search Results</h6>
+            <?php
+            if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
+                $text = $_POST['search_detail'];
+                $arr = array();
+                $allresult = 0;
+
+                $stmt = $conn->prepare("SELECT * FROM tbl_news WHERE n_name LIKE ? ");
+                $stmt->execute([
+                    '%' . $text . '%'
+                ]);
+                $count = $stmt->rowCount();
+                $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+                $allresult += $stmt->rowCount();
+                if (true) {
+                    //tbl 1
+
+                    foreach ($result as $row) {
+                        $items = new stdClass();
+                        $items->name = $row['n_name'];
+                        $items->table = "./news.php";
+
+                        array_push($arr, $items);
+                    }
+
+                    //tbl2
+                    $stmt = $conn->prepare("SELECT * FROM tbl_file WHERE f_name LIKE ? ");
+                    $stmt->execute([
+                        '%' . $text . '%'
+                    ]);
+                    $count = $stmt->rowCount();
+                    $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+                    $allresult += $stmt->rowCount();
+                    foreach ($result as $row) {
+                        $f_id = $row['f_id'];
+                        $items = new stdClass();
+                        $items->name = $row['f_name'];
+                        $items->table = "./photo.php?q=$f_id";
+
+                        array_push($arr, $items);
+                    }
+                    print_r($arr);
+                    echo "<p>จำนวนที่ พบ $allresult </p>";
+                } else {
+                    echo "ไม่มีข้อมูล";
+                }
+            }
+
+            ?>
             <div class="">
                 <h4 class="pb-3">ผลการค้นหาทั้งหมด : <span class="text-primary">10 </span>รายการ</h4>
                 <div class="card p-2 patt my-1" id="search_result">
@@ -102,12 +151,6 @@
 
                 <div class="btn btn w-100 alert-secondary text-center">Load more..</div>
             </div>
-
-
-        </div>
-
-        <div class="col-12 col-md-4 card p-3  d-none d-sm-block">
-            <?php include './include/aside.php'; ?>
         </div>
     </div>
 </div>

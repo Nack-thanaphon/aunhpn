@@ -21,25 +21,22 @@
     ?>
 
     <?php foreach ($result as $row) : ?>
-    <meta property="og:title" content="<?php echo $row['n_name']; ?>">
-    <meta property="og:image" content="https://info-aun-hpn.com/bos/<?php echo $row['n_image']; ?>">
+        <meta property="og:title" content="<?php echo $row['n_name']; ?>">
+        <meta property="og:image" content="https://info-aun-hpn.com/bos/<?php echo $row['n_image']; ?>">
 
     <?php endforeach; ?>
 
 
     <link rel="icon" href="./img/logo/logo.png" />
     <link href="./assets/css/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/style.css">
 
-    <script src="https://code.jquery.com/jquery-3.6.0.js"
-        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <script type="text/javascript"
-        src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </head>
 
 <?php include './include/navbar.php'; ?>
@@ -108,58 +105,58 @@
     </div>
 
     <script>
-    function singlenews() {
-        var baseUrl = (window.location).href; // You can also use document.URL
-        var id = baseUrl.substring(baseUrl.lastIndexOf('=') + 1);
-        $.ajax({
-            type: "POST",
-            dataType: "json",
-            url: "https://www.info-aun-hpn.com/api/news_viewscounter.php",
-            data: {
-                id: id,
-            },
-            success: function(data) {
-                console.log(data);
+        function singlenews() {
+            var baseUrl = (window.location).href; // You can also use document.URL
+            var id = baseUrl.substring(baseUrl.lastIndexOf('=') + 1);
+            $.ajax({
+                type: "POST",
+                dataType: "json",
+                url: "https://www.info-aun-hpn.com/api/news_viewscounter.php",
+                data: {
+                    id: id,
+                },
+                success: function(data) {
+                    console.log(data);
 
-            },
-            error: function(err) {
-                console.log("bad", err)
+                },
+                error: function(err) {
+                    console.log("bad", err)
 
-            }
+                }
+            })
+
+        }
+
+        $(document).ready(function() {
+            var baseUrl = (window.location).href; // You can also use document.URL
+            var id = baseUrl.substring(baseUrl.lastIndexOf('=') + 1);
+            $.ajax({
+                type: "GET",
+                dataType: "json",
+                url: "https://www.info-aun-hpn.com/api/singlenews.php",
+                data: {
+                    id: id,
+                },
+                success: function(data) {
+
+                    $('#news_title').html('<h3 class="p-0 m-0">' + data[0].name + '</h3>');
+                    $('#news_image').html(
+                        '<img style="object-fit: cover; width:100%;"src="https://info-aun-hpn.com/bos/' +
+                        data[0].image + '"></img>');
+                    $('#news_detail').html(data[0].detail);
+                    $('#news_views').html(data[0].view);
+                    $('#date').append(data[0].date);
+
+                    console.log("good", err)
+
+                },
+
+                error: function(err) {
+                    console.log("bad", err)
+
+                }
+            })
         })
-
-    }
-
-    $(document).ready(function() {
-        var baseUrl = (window.location).href; // You can also use document.URL
-        var id = baseUrl.substring(baseUrl.lastIndexOf('=') + 1);
-        $.ajax({
-            type: "GET",
-            dataType: "json",
-            url: "https://www.info-aun-hpn.com/api/singlenews.php",
-            data: {
-                id: id,
-            },
-            success: function(data) {
-
-                $('#news_title').html('<h3 class="p-0 m-0">' + data[0].name + '</h3>');
-                $('#news_image').html(
-                    '<img style="object-fit: cover; width:100%;"src="https://info-aun-hpn.com/bos/' +
-                    data[0].image + '"></img>');
-                $('#news_detail').html(data[0].detail);
-                $('#news_views').html(data[0].view);
-                $('#date').append(data[0].date);
-
-                console.log("good", err)
-
-            },
-
-            error: function(err) {
-                console.log("bad", err)
-
-            }
-        })
-    })
     </script>
     <!-- Go to www.addthis.com/dashboard to customize your tools -->
     <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-620dd9c449543115"></script>
