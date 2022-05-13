@@ -17,11 +17,11 @@ function download() {
                 for (var i = 0; i < data.length; i++) {
                     $fd = `
          
-            <li class="mb-3">
-            <small class="text-start m-0 badge badge-pill badge-primary">${data[i].date}</small>
-            <span>${data[i].group}</span>
+            <li class="mb-3 p-0">
+            <small class="text-secondary">${data[i].date}</small> <br>
+            <small>ชนิดเอกสาร : ${data[i].group}</small>
             <a href="https://info-aun-hpn.com/bos/uploads/docs/${data[i].file}" class="row m-0 p-0">
-                <p class="p-0 m-0 col-12 text-start">${data[i].name}</p>
+            <small class="p-0 m-0 col-12 text-start">${data[i].name}</small>
             </a>
         </li>
            `

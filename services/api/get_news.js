@@ -23,12 +23,12 @@ function newsrender() {
                         </a>                        
                         </div>
                         <div class="col-8 m-0">
-                        <img width="30px" height="20px" src="https://www.dol.go.th/lampang/PublishingImages/Pages/default/new.gif"alt="${data[i].name}">
-                            <span class="badge badge-success m-0 p-1">${data[i].type}</span>
-                            <br>
-                            <small class="text-dark name">${data[i].name}</small>
-                 
-                            <small class="text-muted">${data[i].date}</small>
+                        <small class="badge badge-pill badge-primary m-0 ">${data[i].type}</small>
+                            <img width="30px" height="20px" src="https://www.dol.go.th/lampang/PublishingImages/Pages/default/new.gif"alt="${data[i].name}">
+                                <br>
+                                <small class="text-dark name">${data[i].name}</small>
+                    
+                                <small class="text-muted">${data[i].date}</small>
                         </div>
                     </div>
                 </div>

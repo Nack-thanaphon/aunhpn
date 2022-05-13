@@ -9,20 +9,20 @@
                 <div class="row my-0 my-sm-3 m-0 p-0">
                     <div class="col-12 col-sm-8  main_card">
                         <div class="row main_card_bg ">
-                            <div class="col-12 p-5 text-white  ">
+                            <div class="col-12 p-4 p-sm-5 text-white  ">
                                 <h1 class="  font-weight-bold ">AUN-HPN</h1>
-                                <h4>Asean University Network - Health Promotion Network</h4>
-                                <p class="mb-5">AUN–HPN is a regional network of people and universities working towards a better and healthier society. HPN (Health Promotion Network) is a thematic network of AUN (ASEAN University Network).</p>
+                                <h5>Asean University Network - Health Promotion Network</h5>
+                                <p class="my-4">AUN–HPN is a regional network of people and universities working towards a better and healthier society. HPN (Health Promotion Network) is a thematic network of AUN (ASEAN University Network).</p>
                                 <br>
-                                <a href="./about.php" class="btn btn-outline-primary text-white  col-12 col-sm-3">
-                                    <h5 class="m-0 p-0 ">Learn More</h5>
+                                <a href="./about.php" class="btn btn-primary text-white  col-12 col-sm-3">
+                                    <p class="text-uppercase font-weight-bold p-0 m-0">Learn More</p>
                                 </a>
                             </div>
 
                         </div>
                     </div>
-                   
-                    <div class="col-12 col-sm-4  p-0 pl-0  pl-sm-3 ">
+
+                    <div class="col-12 col-sm-4  p-0 pl-0  pl-sm-3 d-none d-sm-block ">
                         <div class="about_card h-100">
                             <div class="row main_card_bg  h-100 m-0 p-0 patt  ">
                                 <div class="col-12 p-5 text-white text-center m-auto ">
@@ -48,7 +48,7 @@
 
                         </div>
                     </div>
-                    <div class="col-12 col-sm-4  p-0 pl-0  pl-sm-3 my-0 my-sm-3 ">
+                    <div class="col-12 col-sm-4  p-0 pl-0  pl-sm-3 my-0 my-sm-3 d-none d-sm-block">
                         <div class="member_card h-100">
                             <div class="row main_card_bg m-0 h-100 p-0 patt text-center">
                                 <div class="col-12 m-auto   py-5 py-sm-0  text-white  ">
@@ -78,14 +78,14 @@
                 <div class="row m-0 p-0">
                     <div class="col-12 col-sm-4  p-0 pl-0   my-3 ">
                         <div class="row bg-light  h-100 m-0 p-0  patt">
-                            <div class="col-12 p- p-sm-4  text-dark  ">
-                                <div class="row m-0  p-0 d-flex justify-content- mb-3">
+                            <div class="col-12 py-3 p-sm-4  text-dark  ">
+                                <div class="row m-0  p-0 d-flex justify-content-center mb-3">
                                     <hr>
                                     <div class="col-6 text-start m-0 p-0 ">
                                         <h5 class="text-uppercase font-weight-bold p-0 m-0">Newsupdate</h5>
                                     </div>
                                     <div class="col-6 text-right m-0 p-0 ">
-                                        <a href="./news.php">SeeAll</a>
+                                        <a href="./news.php">อ่านทั้งหมด</a>
                                     </div>
                                 </div>
                                 <div class="row p-0 m-0 " id="news">
@@ -95,34 +95,34 @@
                     </div>
                     <div class="col-12 col-sm-4  p-0 pl-0  pl-sm-3 my-3 ">
                         <div class="row bg-light  h-100 m-0 p-0  patt">
-                            <div class="col-12 p- p-sm-4 text-dark  ">
+                            <div class="col-12 py-3 p-sm-4 text-dark  ">
                                 <div class="row m-0 p-0 d-flex justify-content-between mb-3">
                                     <hr>
                                     <div class="col-6 text-start m-0 p-0 ">
                                         <h5 class="text-uppercase font-weight-bold p-0 m-0">Download</h5>
                                     </div>
                                     <div class="col-6 text-right m-0 p-0 ">
-                                        <a href="./file.php">SeeAll</a>
+                                        <a href="./file.php">อ่านทั้งหมด</a>
                                     </div>
                                 </div>
-                                <ul class="p-2" id="download">
+                                <ul class="" id="download">
                                 </ul>
                             </div>
                         </div>
                     </div>
                     <div class="col-12 col-sm-4  p-0 pl-0  pl-sm-3 my-3 ">
                         <div class="row bg-light  h-100 m-0 p-0  patt">
-                            <div class="col-12 p- p-sm-4 text-dark  ">
+                            <div class="col-12 py-3 p-sm-4 text-dark  ">
                                 <div class="row m-0 p-0 d-flex justify-content-between mb-3">
                                     <hr>
                                     <div class="col-6 text-start m-0 p-0 ">
                                         <h5 class="text-uppercase font-weight-bold p-0 m-0">Activity</h5>
                                     </div>
                                     <div class="col-6 text-right m-0 p-0 ">
-                                        <a href="./activity.php">SeeAll</a>
+                                        <a href="./activity.php">อ่านทั้งหมด</a>
                                     </div>
                                 </div>
-                                <ul class="p-2 " id="activity">
+                                <ul class="" id="activity">
 
                                 </ul>
 

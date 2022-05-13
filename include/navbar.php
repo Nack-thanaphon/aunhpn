@@ -67,11 +67,30 @@
         </div>
     </div>
 </nav>
-<div class="bottom-bar p-1 m-0">
-    <ul>
-        <li class="d-none d-sm-block"><a href="./">Home</a></li>
-        <li><a href="newsletter.php">Newsletter</a></li>
-        <li><a href="activity.php">Calendar</a></li>
-        <li><a href="gallery.php">Gallery</a></li>
-    </ul>
+
+
+<div class="onoffswitch3">
+    <input type="checkbox" name="onoffswitch3" class="onoffswitch3-checkbox" id="myonoffswitch3" checked>
+    <label class="onoffswitch3-label p-0 m-0" for="myonoffswitch3">
+        <span class="onoffswitch3-inner">
+            <span class="onoffswitch3-active">
+                <marquee class="scroll-text">
+                    <a href="google.com">
+                        1
+                        <span class="glyphicon glyphicon-forward">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia, ipsum.
+                        </span>
+                    </a>
+                    <a href="google.com">
+                        2
+                        <span class="glyphicon glyphicon-forward">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia, ipsum.
+                        </span>
+                    </a>
+                </marquee>
+                <span class="onoffswitch3-switch">BREAKING NEWS <span><i class="fas fa-power-off"></i></span></span>
+            </span>
+            <span class="onoffswitch3-inactive m-auto">SHOW<i class="fas fa-eye"></i></span></span>
+        </span>
+    </label>
 </div>
