@@ -125,8 +125,6 @@
                                 <ul class="" id="activity">
 
                                 </ul>
-
-                                <!-- <div class="btn btn-primary w-100 text-uppercase font-weight-bold">Read all</div> -->
                             </div>
 
                         </div>
@@ -142,7 +140,7 @@
                                     <div class="input-group">
                                         <input type="text" id="search_detail" name="search_detail" class="form-control py-4 " placeholder="Find this website..">
                                     </div>
-                                    <button class="btn btn-primary col-12 col-md-8 col-sm-8 mx-auto  p-2 my-3 w-100" type="submit" id="search_btn" value="submit" disabled>
+                                    <button class="btn btn-primary col-12 col-md-8 col-sm-8 mx-auto  p-2 my-3 w-100" type="submit" id="search_btn" disabled value="submit">
                                         <small class="fa-solid fa-magnifying-glass">Click here to go</small>
                                         <h4 class="font-weight-bold p-0 m-0">
                                             find now
@@ -161,7 +159,7 @@
     <?php
     include "include/script.php";
     include "include/footer.php"; ?>
-    <!-- <script> search
+    <script>
         $('#search_detail').change(function(e) {
             e.preventDefault(); // avoid to execute the actual submit of the form.
             var val = $('#search_detail').val();
@@ -174,7 +172,7 @@
             }
 
         });
-    </script> -->
+    </script>
     <script src="services/api/get_activity.js"></script>
     <script src="services/api/get_news.js"></script>
     <script src="services/api/web_stat.js"></script>

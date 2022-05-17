@@ -26,9 +26,7 @@ function activity() {
                         <small class="text-start mb-2 p-0 text-secondary">เวลา : <i class="fas fa-clock"></i> ${data[i].start_time} - ${data[i].end_time}</small> <br>
                         <small>สถานที่: <span>${data[i].address}</span></small>
                       
-                    </li>
-
-                    
+                    </li>      
            `
                     $('#activity').append($ac);
                 };
