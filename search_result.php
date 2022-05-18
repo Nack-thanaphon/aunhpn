@@ -22,8 +22,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
         foreach ($result as $row) {
             $items = new stdClass();
+            $id = $row['n_id'];
             $items->name = $row['n_name'];
-            $items->table = "./news.php";
+            $items->type = 'ข่าวสาร';
+            $items->table = "./single_news.php?id=$id";
 
             array_push($arr, $items);
         }
@@ -40,7 +42,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $f_id = $row['f_id'];
             $items = new stdClass();
             $items->name = $row['f_name'];
-            $items->table = "./photo.php?q=$f_id";
+            $items->type = 'เอกสาร';
+            $items->table = "./single_file.php?id=$id";
             array_push($arr, $items);
         }
         //tbl3
@@ -52,10 +55,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
         $allresult += $stmt->rowCount();
         foreach ($result as $row) {
-            $e_id = $row['et_id'];
+            $id = $row['et_id'];
             $items = new stdClass();
             $items->name = $row['title'];
-            $items->table = "./event.php?q=$e_id";
+            $items->type = 'กิจกรรม';
+            $items->table = "./single_activity.php?event=$id";
 
             array_push($arr, $items);
         }
@@ -70,20 +74,18 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 
         foreach ($result as $row) {
-            $news_id = $row['id'];
+            $id = $row['id'];
             $items = new stdClass();
             $items->name = $row['n_title'];
-            $items->table = "./photo.php?q=$news_id";
+            $items->type = 'จดหมายข่าว';
+
+            $items->table = "./single_newsletter.php?id=$id";
+
 
             array_push($arr, $items);
         }
 
         echo "<script>var a = " . json_encode($arr) . "</script>";
-
-        // print_r($arr);
-        // echo $arr[0]->$name;
-        // print_r($arr[0]);
-        // echo $arr[0]->name;
     } else {
     }
 } else {
@@ -99,14 +101,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <h4 class="pb-3">ผลการค้นหาทั้งหมด : <span class="text-primary"><?php echo $allresult ?></span> รายการ</h4>
                 <div class=" p-2  my-1" id="search_result">
                     <div class="row m-0 p-0">
-
                         <?php
                         $html = '';
                         for ($i = 0; $i < count($arr); $i++) {
-                            $html .= '<a href="' . $arr[$i]->table . '" target="blank" class="col-12 card my-2 py-5" >
-                                                <span class="badge badge-secondary">topic</span>
-                                                <h5>' . $arr[$i]->name . '</h5>
-                                                <small>Lorem ipsum dolor sit amet consectetur,..</small>
+                            $html .= '<a href="' . $arr[$i]->table . '" target="blank" class="col-12 card my-2 py-2" >
+                                                <small class="text-secondary">' . $arr[$i]->type . '</small>
+                                                <h4 class="py-3">' . $arr[$i]->name . '</h4>
                                     </a>';
                         }
                         echo $html;
@@ -144,14 +144,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     '" target="_blank">Click me</a>');
                 $('#e_date').append('วันเดือนปี :', data[0].end_date);
                 $('#e_time').append('เวลา :', data[0].start_time, '-', data[0].end_time);
-                // $('#news_title').html('<h3 class="p-0 m-0">' + data[0].n_name + '</h3>');
-                // $('#news_image').html(
-                //     '<img style="object-fit: cover; width:100%;"src="https://info-aun-hpn.com/bos/' +
-                //     data[0].n_image + '"></img>');
-                // $('#news_detail').html(data[0].n_detail);
-                // $('#news_views').html(data[0].n_views);
-                // console.log("good", err)
-
             },
 
             error: function(err) {

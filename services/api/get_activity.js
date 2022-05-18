@@ -16,7 +16,7 @@ function activity() {
             data = data.result;
             if (data != '') {
                 for (var i = 0; i < data.length; i++) {
-                    $ac = `             
+                    ac = `             
                         <li class="mb-3">
                         <small class="text-primary">${data[i].end_date}</small> <br>
                         
@@ -28,7 +28,7 @@ function activity() {
                       
                     </li>      
            `
-                    $('#activity').append($ac);
+                    $('#activity').append(ac);
                 };
             } else {
                 $('#activity').html('ไม่มีข้อมูล');
