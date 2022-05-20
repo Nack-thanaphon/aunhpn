@@ -43,7 +43,7 @@
                                     ${data[i].title}
                                     </h6>
                                 <br>
-                                    <a href="" class="btn btn-primary p-1 m-0">อ่านเพิ่มเติม</a>
+                                    <a href="./single_activity.php?event=${data[i].id}" class="btn btn-primary p-1 m-0">อ่านเพิ่มเติม</a>
                                 </div>
                             </div>
                         </li>`
