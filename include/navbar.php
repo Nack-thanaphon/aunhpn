@@ -55,6 +55,7 @@
                             Manual(2021)</a>
                         <a class="dropdown-item" href="newsletter.php">Newsletter</a>
                         <a class="dropdown-item" href="file.php">Document Update</a>
+                        <a class="dropdown-item" href="gallery.php">gallery</a>
                     </div>
                 </li>
                 <li class="nav-item text-white">

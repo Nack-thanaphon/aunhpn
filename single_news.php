@@ -18,6 +18,9 @@
             $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
         }
     }
+
+
+
     ?>
 
     <?php foreach ($result as $row) : ?>
@@ -135,7 +138,7 @@
             $.ajax({
                 type: "GET",
                 dataType: "json",
-                url: "https://www.info-aun-hpn.com/api/singlenews.php",
+                url: "https://www.info-aun-hpn.com/api/single_news.php",
                 data: {
                     id: id,
                 },

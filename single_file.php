@@ -2,34 +2,9 @@
 <?php include './include/navbar.php'; ?>
 
 <div class="container">
-    <div class="row my-5 m-2 p-0  d-flex justify-content-between">
-        <div class="col-12 col-md-7 card p-3 mb-2">
+    <div class="row m-0 p-0">
+        <div class="col-12 col-md-12 col-sm-12 card p-3  m-1  text-sm-center" id="download">
 
-            <h6 id="e_type" class="text-secondary"> </h6>
-
-
-            <h3 id="e_title" class="text-primary py-3"></h3>
-
-            <div class="py-3">
-                <h4>รายละเอียดกิจกรรม :</h4>
-                <p id="e_detail">
-
-                </p>
-            </div>
-
-            <div class="py-1">
-                <b id="e_date"></b><br>
-                <b id="e_time"></b>
-                <p id="e_detail">
-
-                </p>
-            </div>
-            <h5 id="e_link">
-            </h5>
-        </div>
-
-        <div class="col-12 col-md-4 card p-3  d-none d-sm-block">
-            <?php include './include/aside.php'; ?>
         </div>
     </div>
 </div>
@@ -42,35 +17,29 @@
         $.ajax({
             type: "GET",
             dataType: "json",
-            url: "https://www.info-aun-hpn.com/api/singleactivity.php",
+            url: "https://www.info-aun-hpn.com/api/single_download.php",
             data: {
                 id: id,
             },
             success: function(data) {
-
                 data = data.result;
-                console.log(data)
 
-                $('#e_type').append("หัวข้อกิจกรรม : ", data[0].type);
-                $('#e_title').append("ชื่อกิจกรรม : ", data[0].title);
-                $('#e_detail').append(data[0].detail);
-                $('#e_link').append('ลิงค์กิจกรรม :<a href="' + data[0].link +
-                    '" target="_blank">Click me</a>');
-                $('#e_date').append('วันเดือนปี :', data[0].end_date);
-                $('#e_time').append('เวลา :', data[0].start_time, '-', data[0].end_time);
-                // $('#news_title').html('<h3 class="p-0 m-0">' + data[0].n_name + '</h3>');
-                // $('#news_image').html(
-                //     '<img style="object-fit: cover; width:100%;"src="https://info-aun-hpn.com/bos/' +
-                //     data[0].n_image + '"></img>');
-                // $('#news_detail').html(data[0].n_detail);
-                // $('#news_views').html(data[0].n_views);
-                // console.log("good", err)
 
+                for (var i = 0; i < data.length; i++) {
+                    $fd = `<h6 id="f_type" class="text-secondary"> ${data[i].group}</h6>
+                        <h3 class="text-primary font-weight-bold" id="f_title">${data[i].name}</h3>
+                        <small id="f_date" class="">วัน เดือน ปี : ${data[i].date}</small>
+                        <hr>
+                        <div class="row m-0 p-0">
+                            <div class="col-8 mx-auto">
+                            <a href="https://info-aun-hpn.com/bos/uploads/docs/${data[i].file}" class="btn btn-success w-100" target="blank"><i class="fas fa-arrow-circle-down"></i> Download </a>
+                            </div>
+                        </div>`
+                    $('#download').append($fd);
+                };
             },
-
             error: function(err) {
                 console.log("bad", err)
-
             }
         })
     })

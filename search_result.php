@@ -84,8 +84,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
             array_push($arr, $items);
         }
-
-        echo "<script>var a = " . json_encode($arr) . "</script>";
     } else {
     }
 } else {
