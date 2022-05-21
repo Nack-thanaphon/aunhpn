@@ -91,7 +91,7 @@
                 </marquee>
                 <span class="onoffswitch3-switch">BREAKING NEWS <span><i class="fas fa-power-off"></i></span></span>
             </span>
-            <span class="onoffswitch3-inactive m-auto">SHOW<i class="fas fa-eye"></i></span></span>
+            <span class="onoffswitch3-inactive mx-auto">SHOW <i class="fas fa-eye"></i></span></span>
         </span>
     </label>
 </div>

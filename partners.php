@@ -34,8 +34,6 @@
                                 </ul><!-- Tab panes -->
                             </div>
                             <div class="col-12 col-md-12 p-2 m-0 card">
-
-
                                 <div class="row p-0 m-0">
                                     <div class="col-12 col-md-6 p-sm-2 p-0 d-sm-block d-none">
                                         <div id="map"></div>

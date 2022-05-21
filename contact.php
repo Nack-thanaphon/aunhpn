@@ -8,8 +8,8 @@
             <h1 class="text-primary">ติดต่อเรา</h1>
             <small class="text-secondary">Asean University Health Promotion Network</small>
         </div>
-        <div class="col-12 col-md-12 mx-auto  p-5  ">
-            <div class="row">
+        <div class="col-12 col-md-12 mx-auto  p-1  ">
+            <div class="row m-0 p-0">
                 <div class="col-12 col-md-4 mb-2">
                     <p><i class="fas fa-home me-3"></i> ASEAN Institute for Health Development, <br>
                         999 Salaya

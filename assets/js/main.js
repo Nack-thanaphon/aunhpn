@@ -1,16 +1,3 @@
-$(document).ready(() => {
-
-    $('#activities').slick({
-        autoplay: true,
-        autoplaySpeed: 2500,
-        arrows: true,
-        prevArrow: '<button type="button" class="slick-prev"></button>',
-        nextArrow: '<button type="button" class="slick-next"></button>',
-        centerMode: true,
-        slidesToShow: 1,
-
-    });
-});
 
 //End Nav Slidepicture
 
