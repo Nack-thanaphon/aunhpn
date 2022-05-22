@@ -3,8 +3,8 @@
 
 <div class="row m-0 p-0">
     <div class="col-12 col-md-12 col-sm-12 card p-3 p-sm-5 text-sm-center">
-        <h1 class="text-primary font-weight-bold">Newsletter</h1>
-        <small class="text-secondary">Newsletter : Asean University Health Promotion Network</small>
+        <h1 class="text-primary font-weight-bold">curriculum</h1>
+        <small class="text-secondary">curriculum : Asean University Health Promotion Network</small>
         <hr>
         <div class="row my-4 m-0 p-0">
             <div class="col-12 m-0 p-0">
@@ -23,7 +23,7 @@
         $.ajax({
             type: "GET",
             dataType: "json",
-            url: "https://www.info-aun-hpn.com/api/get_newsletter.php",
+            url: "https://www.info-aun-hpn.com/api/get_curriculum.php",
             data: {},
         }).done(function(data) {
             let tableData = []
@@ -33,9 +33,9 @@
                 tableData.push([
                     `${data[i].id}`,
                     `${data[i].name}`,
-                    `${data[i].date}`,
+                    `${data[i].group}`,
                     `<div class="btn-group mx-auto" role="group">
-                    <a href="https://info-aun-hpn.com/bos/uploads/docs/${data[i].date}" target="blank" class=" btn btn-primary "><small class="m-0 p-0 font-weight-bold ">
+                    <a href="https://info-aun-hpn.com/bos/uploads/docs/${data[i].file}" target="blank" class=" btn btn-primary "><small class="m-0 p-0 font-weight-bold ">
                 <i class="fas fa-eye"></i> Read</small></a>
 
                 <a href="https://info-aun-hpn.com/bos/uploads/docs/${data[i].file}" target="blank" class=" btn btn-success "><small class="m-0 p-0 font-weight-bold ">
@@ -60,7 +60,7 @@
                         width: "10%",
                     },
                     {
-                        title: "Newsletter Name",
+                        title: "curriculum Name",
                         className: "align-middle",
                         width: "60%",
 
@@ -68,7 +68,7 @@
                     },
 
                     {
-                        title: "Month/Year",
+                        title: "initials",
                         className: "align-middle",
 
                     },

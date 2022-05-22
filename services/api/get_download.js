@@ -15,15 +15,12 @@ function download() {
             data = data.result;
             if (data != '') {
                 for (var i = 0; i < data.length; i++) {
-                    $fd = `
-         
-            <li class="mb-3 p-0">
-            <small class="text-secondary">${data[i].date}</small> <br>
-            <small>ชนิดเอกสาร : ${data[i].group}</small>
-            <a href="https://info-aun-hpn.com/bos/uploads/docs/${data[i].file}" class="row m-0 p-0">
-            <small class="p-0 m-0 col-12 text-start">${data[i].name}</small>
-            </a>
-        </li>
+                    $fd = `<li class="mb-3 p-0">
+                <small class="text-secondary">${data[i].date}</small> <br>
+                <small>ชนิดเอกสาร : ${data[i].group}</small>
+                <a href="./single_file.php?f=${data[i].id}" class="row m-0 p-0">
+                <small class="p-0 m-0 col-12 text-start">${data[i].name}</small>
+                </a> </li>
            `
                     $('#download').append($fd);
                 };

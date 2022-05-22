@@ -41,6 +41,15 @@
                 <li class="nav-item text-white">
                     <a class="nav-link text-white" href="activity.php">Activities</a>
                 </li>
+                <li class="nav-item text-white">
+                    <a class="nav-link text-white" href="gallery.php">gallery</a>
+                </li>
+                <li class="nav-item text-white">
+                    <a class="nav-link text-white" href="curriculum.php">curriculum</a>
+                </li>
+                <li class="nav-item text-white">
+                    <a class="nav-link text-white" href="newsletter.php">Newsletter</a>
+                </li>
 
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -53,8 +62,7 @@
                             OrganizationProfile</a>
                         <a class="dropdown-item" href="./img/file/HursManualversion2021_3.pdf" target="blank">Hurs
                             Manual(2021)</a>
-                        <a class="dropdown-item" href="newsletter.php">Newsletter</a>
-                        <a class="dropdown-item" href="file.php">Document Update</a>
+
                     </div>
                 </li>
                 <li class="nav-item text-white">
@@ -90,7 +98,7 @@
                 </marquee>
                 <span class="onoffswitch3-switch">BREAKING NEWS <span><i class="fas fa-power-off"></i></span></span>
             </span>
-            <span class="onoffswitch3-inactive m-auto">SHOW<i class="fas fa-eye"></i></span></span>
+            <span class="onoffswitch3-inactive mx-auto">SHOW <i class="fas fa-eye"></i></span></span>
         </span>
     </label>
 </div>

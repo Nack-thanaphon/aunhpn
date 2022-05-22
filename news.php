@@ -1,8 +1,8 @@
 <?php include './include/header.php'; ?>
 <?php include './include/navbar.php'; ?>
 
-<div class="row m-0 p-0">
-    <div class="col-12 col-md-8 col-sm-12 card p-3 p-sm-5 text-sm-center">
+<div class="row p-0 m-1 d-flex justify-content-between">
+    <div class="col-12 col-md-8 card p-3  mb-3">
         <h1 class="text-primary font-weight-bold">ข่าวสารประจำเดือน</h1>
         <small class="text-secondary">Newsupdate : Asean University Health Promotion Network</small>
         <hr>
@@ -14,11 +14,9 @@
             <div id="pagination_link"></div>
         </div>
     </div>
-    <div class="col-12 col-md-4 card p-3 m-0">
+    <div class="col-12 col-md-4  p-3 m-0 ">
         <?php include './include/aside.php' ?>
     </div>
-</div>
-
 </div>
 <?php include 'include/script.php'; ?>
 <script>
@@ -86,7 +84,6 @@
             type: "GET",
             dataType: "json",
             url: "https://www.info-aun-hpn.com/api/news_by_month.php",
-
             data: {},
             success: function(data) {
                 data = data.result;

@@ -34,7 +34,7 @@
         $.ajax({
             type: "GET",
             dataType: "json",
-            url: "https://www.info-aun-hpn.com/api/singleactivity.php",
+            url: "https://www.info-aun-hpn.com/api/single_activity.php",
             data: {
                 id: id,
             },
@@ -52,12 +52,9 @@
                 $('#e_type').append(data[0].type);
                 $('#e_title').append(data[0].title);
                 $('#e_detail').append(data[0].detail);
-
                 $('#e_date').append(data[0].end_date);
                 $('#e_time').append(data[0].start_time, '-', data[0].end_time);
                 $('#e_address').append(data[0].address);
-
-
             },
 
             error: function(err) {
