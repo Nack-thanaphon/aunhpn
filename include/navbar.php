@@ -82,17 +82,18 @@
     <label class="onoffswitch3-label p-0 m-0" for="myonoffswitch3">
         <span class="onoffswitch3-inner">
             <span class="onoffswitch3-active">
-                <marquee class="scroll-text">
-                    <a href="google.com">
-                        1
+                <marquee class="scroll-text" behavior='scroll' direction='left' scrollamount='5'>
+                    <a href="google.com" class="mr-5">
+                        Greater :
                         <span class="glyphicon glyphicon-forward">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia, ipsum.
+                            Welcome to Mugh | Mahidol University Global Health
                         </span>
                     </a>
-                    <a href="google.com">
-                        2
+
+                    <a href="google.com" class="mr-5">
+                        Newupdate :
                         <span class="glyphicon glyphicon-forward">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia, ipsum.
+                            คู่มือ Mugh ฉบับล่าสุด (อัพเดต 2022)
                         </span>
                     </a>
                 </marquee>

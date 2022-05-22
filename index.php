@@ -134,13 +134,16 @@
                     <div class="col-12  p-0   my-3 ">
                         <div class="row  h-100 m-0 text-center py-4 ">
                             <div class="col-12 col-sm-8 mx-auto  text-primary  ">
-                                <h2 class="font-weight-bold text-uppercase ">Search tool</h2>
+                                <h2 class="font-weight-bold text-uppercase ">ค้นหา</h2>
+                                <h4>ท่านสามารถค้นหาได้แล้วที่นี้</h4>
+                                <small class="text-secondary">การประชุม เอกสาร กิจกรรม ข่าวสาร</small><br>
+
                                 <small class="text-danger">**Coming Soon</small>
                                 <form id="search" method="POST" class="my-4" action="./search_result.php">
                                     <div class="input-group">
                                         <input type="text" id="search_detail" name="search_detail" class="form-control py-4 " placeholder="Find this website..">
                                     </div>
-                                    <button class="btn btn-primary col-12 col-md-8 col-sm-8 mx-auto  p-2 my-3 w-100" type="submit" id="search_btn" disabled value="submit">
+                                    <button class="btn btn-primary col-12 col-md-8 col-sm-8 mx-auto  p-2 my-3 w-100" type="submit" id="search_btn" value="submit" disabled>
                                         <small class="fa-solid fa-magnifying-glass">Click here to go</small>
                                         <h4 class="font-weight-bold p-0 m-0">
                                             find now
