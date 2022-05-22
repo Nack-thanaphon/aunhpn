@@ -46,9 +46,9 @@
 <?php include './include/navbar.php'; ?>
 
 <body onload="singlenews();">
-    <div class="container-fluid">
+    <div class="container-fluid p-0">
         <div class="row p-0 m-1 d-flex justify-content-between">
-            <div class="col-12 col-md-8  p-3  mb-3">
+            <div class="col-12 col-md-8 p-sm-3 p-1  my-3">
                 <nav aria-label="">
                     <div class="row m-0 p-0 d-none d-sm-block">
                         <div class="col-8">
@@ -66,11 +66,11 @@
                 <article id="blog-post" class="blog-post">
                     <h3 id="news_title"></h3>
                     <div class="row m-0 p-0 d-flex justify-space-between">
-                        <div class="col-9 col-sm-9 ">
+                        <div class="col-12 col-sm-9 ">
                             <div class="addthis_inline_share_toolbox_4p75"></div>
                         </div>
 
-                        <div class="col-3 col-sm-3 text-right">
+                        <div class="col-12 col-sm-3 text-right">
                             <small id="date"></small><br>
                             <small class="p-0 m-0 " style="font-size: 0.8rem;">
                                 เข้าชม

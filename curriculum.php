@@ -31,7 +31,6 @@
             data = data.result;
             for (var i = 0; i < data.length; i++) {
                 tableData.push([
-                    `${data[i].id}`,
                     `${data[i].name}`,
                     `${data[i].group}`,
                     `
@@ -52,11 +51,6 @@
             $('#g_table').DataTable({
                 data: tableData,
                 columns: [{
-                        title: "ลำดับที่",
-                        className: "align-middle",
-                        width: "10%",
-                    },
-                    {
                         title: "curriculum Name",
                         className: "align-middle",
                         width: "60%",
