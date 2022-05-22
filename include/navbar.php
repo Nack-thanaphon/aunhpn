@@ -83,17 +83,17 @@
         <span class="onoffswitch3-inner">
             <span class="onoffswitch3-active">
                 <marquee class="scroll-text" behavior='scroll' direction='left' scrollamount='5'>
-                    <a href="google.com" class="mr-5">
+                    <a class="mr-5">
                         Greater :
                         <span class="glyphicon glyphicon-forward">
-                            Welcome to Mugh | Mahidol University Global Health
+                            Welcome to AUN-HPN | ASEAN University Network - Health Promotion Network
                         </span>
                     </a>
 
-                    <a href="google.com" class="mr-5">
+                    <a href="./img/file/AUN-HPN Organization Profile_2.pdf" class="mr-5">
                         Newupdate :
                         <span class="glyphicon glyphicon-forward">
-                            คู่มือ Mugh ฉบับล่าสุด (อัพเดต 2022)
+                            AUN-HPN OrganizationProfile
                         </span>
                     </a>
                 </marquee>

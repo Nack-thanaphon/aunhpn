@@ -34,12 +34,9 @@
                     `${data[i].id}`,
                     `${data[i].name}`,
                     `${data[i].group}`,
-                    `<div class="btn-group mx-auto" role="group">
-                    <a href="https://info-aun-hpn.com/bos/uploads/docs/${data[i].file}" target="blank" class=" btn btn-primary "><small class="m-0 p-0 font-weight-bold ">
-                <i class="fas fa-eye"></i> Read</small></a>
-
+                    `
                 <a href="https://info-aun-hpn.com/bos/uploads/docs/${data[i].file}" target="blank" class=" btn btn-success "><small class="m-0 p-0 font-weight-bold ">
-                <i class="fas fa-arrow-circle-down"></i> Download (${data[i].type})</small></a>
+                <i class="fas fa-arrow-circle-down"></i> Download </small></a>
                 </div>
               `,
 

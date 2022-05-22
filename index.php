@@ -138,7 +138,7 @@
                                 <h4>ท่านสามารถค้นหาได้แล้วที่นี้</h4>
                                 <small class="text-secondary">การประชุม เอกสาร กิจกรรม ข่าวสาร</small><br>
 
-                                <small class="text-danger">**Coming Soon</small>
+
                                 <form id="search" method="POST" class="my-4" action="./search_result.php">
                                     <div class="input-group">
                                         <input type="text" id="search_detail" name="search_detail" class="form-control py-4 " placeholder="Find this website..">
