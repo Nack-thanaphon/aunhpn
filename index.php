@@ -11,7 +11,7 @@
                         <div class="row main_card_bg ">
                             <div class="col-12 p-4 p-sm-5 text-white  ">
                                 <h1 class="  font-weight-bold ">AUN-HPN</h1>
-                                <h5>Asean University Network - Health Promotion Network</h5>
+                                <h5>ASEAN University Network - Health Promotion Network</h5>
                                 <p class="my-4">AUN–HPN is a regional network of people and universities working towards a better and healthier society. HPN (Health Promotion Network) is a thematic network of AUN (ASEAN University Network).</p>
                                 <br>
                                 <a href="./about.php" class="btn btn-primary text-white  col-12 col-sm-3">
@@ -125,8 +125,6 @@
                                 <ul class="" id="activity">
 
                                 </ul>
-
-                                <!-- <div class="btn btn-primary w-100 text-uppercase font-weight-bold">Read all</div> -->
                             </div>
 
                         </div>
@@ -142,7 +140,7 @@
                                     <div class="input-group">
                                         <input type="text" id="search_detail" name="search_detail" class="form-control py-4 " placeholder="Find this website..">
                                     </div>
-                                    <button class="btn btn-primary col-12 col-md-8 col-sm-8 mx-auto  p-2 my-3 w-100" type="submit" id="search_btn" value="submit" disabled>
+                                    <button class="btn btn-primary col-12 col-md-8 col-sm-8 mx-auto  p-2 my-3 w-100" type="submit" id="search_btn" disabled value="submit">
                                         <small class="fa-solid fa-magnifying-glass">Click here to go</small>
                                         <h4 class="font-weight-bold p-0 m-0">
                                             find now
@@ -161,7 +159,7 @@
     <?php
     include "include/script.php";
     include "include/footer.php"; ?>
-    <!-- <script> search
+    <script>
         $('#search_detail').change(function(e) {
             e.preventDefault(); // avoid to execute the actual submit of the form.
             var val = $('#search_detail').val();
@@ -174,7 +172,7 @@
             }
 
         });
-    </script> -->
+    </script>
     <script src="services/api/get_activity.js"></script>
     <script src="services/api/get_news.js"></script>
     <script src="services/api/web_stat.js"></script>

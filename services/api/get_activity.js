@@ -16,7 +16,7 @@ function activity() {
             data = data.result;
             if (data != '') {
                 for (var i = 0; i < data.length; i++) {
-                    $ac = `             
+                    ac = `             
                         <li class="mb-3">
                         <small class="text-primary">${data[i].end_date}</small> <br>
                         
@@ -26,11 +26,9 @@ function activity() {
                         <small class="text-start mb-2 p-0 text-secondary">เวลา : <i class="fas fa-clock"></i> ${data[i].start_time} - ${data[i].end_time}</small> <br>
                         <small>สถานที่: <span>${data[i].address}</span></small>
                       
-                    </li>
-
-                    
+                    </li>      
            `
-                    $('#activity').append($ac);
+                    $('#activity').append(ac);
                 };
             } else {
                 $('#activity').html('ไม่มีข้อมูล');

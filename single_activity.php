@@ -41,7 +41,6 @@
             success: function(data) {
 
                 data = data.result;
-
                 let link = data[0].link;
 
                 if (link !== '') {
@@ -50,8 +49,6 @@
                     $('#e_link').html('<small>ไม่มีข้อมูล</small>');
 
                 }
-
-
                 $('#e_type').append(data[0].type);
                 $('#e_title').append(data[0].title);
                 $('#e_detail').append(data[0].detail);

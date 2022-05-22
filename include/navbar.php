@@ -23,7 +23,7 @@
             <img width="50px" height="50px" class="d-block" src="./img/logo/Logo.png" alt="">
             <div class="navbar-detail text-white pl-3  m-0">
                 <b class="p-0 m-0">AUN-HPN</b><br>
-                <p class="p-0 m-0" style="font-size: 0.6rem;">Asean University Health Promotion Network</p>
+                <p class="p-0 m-0" style="font-size: 0.6rem;">ASEAN University Network - Health Promotion Network</p>
             </div>
         </a>
 

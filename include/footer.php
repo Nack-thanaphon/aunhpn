@@ -58,8 +58,7 @@
                     thiprada.kon@mahidol.ac.th <br>
                     jariya.srk@mahidol.ac.th
                 </p>
-                <p><i class="fas fa-phone me-3"></i> +662-441904-3 Ext.72</p>
-                <p><i class="fas fa-mobile  me-3"></i></i> +662-4419044</p>
+                <p><i class="fas fa-phone me-3"></i> +662-4419040-3 Ext.72</p>
                 <p><i class="fas fa-print me-3"></i> 02-441-9044</p>
             </div>
             <!-- Grid column -->
