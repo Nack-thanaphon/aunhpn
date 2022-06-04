@@ -45,7 +45,7 @@
 
             initDataTables(tableData);
         }).fail(function() {
-
+            $('#g_table').html('ไม่พบข้อมูล')
         })
 
         function initDataTables(tableData) { // สร้าง datatable

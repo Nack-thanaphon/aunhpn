@@ -1,10 +1,10 @@
 <div class="top-bar">
-    <div class="container">
+    <div class="container-fluid">
         <div class="row py-1 px-1">
             <div class="col-6 p-2 my-auto text-left ">
                 <a class="text-white" href="tel:+662-4419044">
                     <i class="fas fa-phone-alt">
-                        +662-441-9044</i>
+                        +662-4419040-3 Ext.72</i>
                 </a>
             </div>
             <div class="col-6 p-0 my-auto text-right">
@@ -17,13 +17,13 @@
 
 <nav class="navbar navbar-expand-md navbar-light bg-dark text-white  py-4" id="navbar-bg">
 
-    <div class="container ">
+    <div class="container-fluid ">
         <a class="navbar-brand d-flex justify-content-between" href="./">
             <!-- <img class="d-none d-sm-block" src="./img/logo/logo2.png" alt=""> -->
-            <img width="50px" height="50px" class="d-block" src="./img/logo/Logo.png" alt="">
-            <div class="navbar-detail text-white pl-3  m-0">
-                <b class="p-0 m-0">AUN-HPN</b><br>
-                <p class="p-0 m-0" style="font-size: 0.6rem;">ASEAN University Network - Health Promotion Network</p>
+            <img width="80px" height="80px" class="d-block" src="./img/logo/Logo.png" alt="">
+            <div class="navbar-detail text-white pl-3  m-0 my-auto">
+                <h2 class="p-0 m-0">AUN-HPN</h2>
+                <h6 class="p-0 m-0">ASEAN University Network - Health Promotion Network</h6>
             </div>
         </a>
 
@@ -44,9 +44,9 @@
                 <li class="nav-item text-white">
                     <a class="nav-link text-white" href="gallery.php">gallery</a>
                 </li>
-                <li class="nav-item text-white">
+                <!-- <li class="nav-item text-white">
                     <a class="nav-link text-white" href="curriculum.php">curriculum</a>
-                </li>
+                </li> -->
                 <li class="nav-item text-white">
                     <a class="nav-link text-white" href="newsletter.php">Newsletter</a>
                 </li>
@@ -77,17 +77,20 @@
 </nav>
 
 
-<div class="onoffswitch3">
+<div class="onoffswitch3  ">
     <input type="checkbox" name="onoffswitch3" class="onoffswitch3-checkbox" id="myonoffswitch3" checked>
     <label class="onoffswitch3-label p-0 m-0" for="myonoffswitch3">
-        <span class="onoffswitch3-inner">
+        <span class="onoffswitch3-inner my-auto">
             <span class="onoffswitch3-active">
                 <marquee class="scroll-text" behavior='scroll' direction='left' scrollamount='5'>
                     <a class="mr-5">
-                        Greater :
-                        <span class="glyphicon glyphicon-forward">
-                            Welcome to AUN-HPN | ASEAN University Network - Health Promotion Network
-                        </span>
+                        <h4>
+                            Greater :
+                            <span class="glyphicon glyphicon-forward">
+                                Welcome to AUN-HPN | ASEAN University Network - Health Promotion Network
+                            </span>
+
+                        </h4>
                     </a>
 
                     <a href="./img/file/AUN-HPN Organization Profile_2.pdf" class="mr-5">

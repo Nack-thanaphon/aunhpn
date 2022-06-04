@@ -33,8 +33,7 @@
                 <td class="text-uppercase">Indonesia</td>
                 <td>
                     <ul>
-                        <li><a href="https://www.itb.ac.id/" target="_blank">Royal University of Law and Economics</a>
-                        </li>
+                       
                         <li><a href="http://unair.ac.id/?lang=en" target="_blank">Universitas Airlangga</a></li>
                         <li><a href="https://ugm.ac.id/en/" target="_blank">Universitas Gadjah Mada</a></li>
                         <li><a href="http://www.ui.ac.id/en/" target="_blank">Universitas Indonesia</a></li>

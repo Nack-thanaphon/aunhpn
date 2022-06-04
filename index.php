@@ -3,7 +3,7 @@
 
 <body>
     <input type="hidden" id="web_static" name="c_ip" value="<?php echo $_SERVER['REMOTE_ADDR']; ?>">
-    <div class="container m-0 p-0 mx-auto mb-3">
+    <div class="container-fluid m-0 p-0 mx-auto mb-3">
         <div class="row m-0 p-0 ">
             <div class="col-12 m-0 p-0">
                 <div class="row my-0 my-sm-3 m-0 p-0">
@@ -29,7 +29,7 @@
                                     <h2 class="text-uppercase   font-weight-bold ">About us</h2>
                                     <small>Our Duty and Responsibility</small>
 
-                                    <a href="./partners.php" class="btn btn-primary w-100 mt-5 p-2 text-center">
+                                    <a href="./about.php" class="btn btn-primary w-100 mt-5 p-2 text-center">
                                         <p class="p-0 m-0 text-uppercase font-weight-bold"><i class="fas fa-right"></i>Our Goal</p>
                                     </a>
                                 </div>

@@ -1,10 +1,12 @@
 <?php
+
 /**
  * @package dompdf
  * @link    http://dompdf.github.com/
  * @author  Benj Carson <benjcarson@digitaljunkies.ca>
  * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
  */
+
 namespace Dompdf\FrameDecorator;
 
 use Dompdf\Dompdf;
@@ -131,7 +133,8 @@ class Block extends AbstractFrameDecorator
         $this->maximize_line_height($frame->get_margin_height(), $frame);
 
         // Add any dangling list markers to the first line box if it is inline
-        if ($this->_cl === 0 && $current_line->inline
+        if (
+            $this->_cl === 0 && $current_line->inline
             && $this->dangling_markers !== []
         ) {
             foreach ($this->dangling_markers as $marker) {

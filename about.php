@@ -1,7 +1,7 @@
 <?php include 'include/header.php'; ?>
 <?php include 'include/navbar.php'; ?>
 
-<div class="container">
+<div class="container-fluid">
     <div class="row py-5">
         <div class="col-12 p-0 m-0">
         </div>
@@ -19,17 +19,11 @@
                 <div class=" bg-secondary text-black rounded">
                     <div class="bg-dark p-3 text-white ">
                         <h4 class="fst-italic text-center">Our Mission</h4>
-                        <div class="nav flex-column nav-pills text-start" id="v-pills-tab" role="tablist"
-                            aria-orientation="vertical">
-                            <a class="nav-link active  text-uppercase" id="v-pills-home-tab" data-toggle="pill"
-                                href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true"> Our
+                        <div class="nav flex-column nav-pills text-start" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                            <a class="nav-link active  text-uppercase" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true"> Our
                                 GOAL</a>
-                            <a class="nav-link text-uppercase" id="v-pills-profile-tab" data-toggle="pill"
-                                href="#v-pills-profile" role="tab" aria-controls="v-pills-profile"
-                                aria-selected="false">Our Mission</a>
-                            <a class="nav-link text-uppercase" id="v-pills-messages-tab" data-toggle="pill"
-                                href="#v-pills-messages" role="tab" aria-controls="v-pills-messages"
-                                aria-selected="false">Our Objectives</a>
+                            <a class="nav-link text-uppercase" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Our Mission</a>
+                            <a class="nav-link text-uppercase" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Our Objectives</a>
 
                         </div>
                     </div>
@@ -39,8 +33,7 @@
         </div>
         <div class="col-md-8 mb-5 mx-auto col-12 tab-content" id="v-pills-tabContent">
 
-            <div class=" tab-pane fade show active" id="v-pills-home" role="tabpanel"
-                aria-labelledby="v-pills-home-tab">
+            <div class=" tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
 
                 <article class="tab-pane well active in active" id="Whoweare">
                     <img width="100%" src="./img/mugh.png" alt="">

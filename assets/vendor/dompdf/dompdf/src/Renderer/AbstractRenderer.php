@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @package dompdf
  * @link    http://dompdf.github.com/
@@ -7,6 +8,7 @@
  * @author  Fabien Ménager <fabien.menager@gmail.com>
  * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
  */
+
 namespace Dompdf\Renderer;
 
 use Dompdf\Adapter\CPDF;
@@ -194,7 +196,7 @@ abstract class AbstractRenderer
         } else {
             //repeat x
             if ($bg_x < 0) {
-                $bg_x = -((-$bg_x) % $img_w);
+                $bg_x = - ((-$bg_x) % $img_w);
             } else {
                 $bg_x = $bg_x % $img_w;
                 if ($bg_x > 0) {
@@ -222,7 +224,7 @@ abstract class AbstractRenderer
         } else {
             //repeat y
             if ($bg_y < 0) {
-                $bg_y = -((-$bg_y) % $img_h);
+                $bg_y = - ((-$bg_y) % $img_h);
             } else {
                 $bg_y = $bg_y % $img_h;
                 if ($bg_y > 0) {
@@ -357,7 +359,6 @@ abstract class AbstractRenderer
             if ($repeat === "no-repeat") {
                 // Simply place the image on the background
                 imagecopy($bg, $src, $dst_x, $dst_y, $src_x, $src_y, $img_w, $img_h);
-
             } else if ($repeat === "repeat-x") {
                 for ($bg_x = $start_x; $bg_x < $bg_width; $bg_x += $img_w) {
                     if ($bg_x < 0) {
@@ -585,34 +586,42 @@ abstract class AbstractRenderer
         // All this polygon business is for beveled corners...
         switch ($side) {
             case "top":
-                $points = [$x, $y,
+                $points = [
+                    $x, $y,
                     $x + $length, $y,
                     $x + $length - $right, $y + $top,
-                    $x + $left, $y + $top];
+                    $x + $left, $y + $top
+                ];
                 $this->_canvas->polygon($points, $color, null, null, true);
                 break;
 
             case "bottom":
-                $points = [$x, $y,
+                $points = [
+                    $x, $y,
                     $x + $length, $y,
                     $x + $length - $right, $y - $bottom,
-                    $x + $left, $y - $bottom];
+                    $x + $left, $y - $bottom
+                ];
                 $this->_canvas->polygon($points, $color, null, null, true);
                 break;
 
             case "left":
-                $points = [$x, $y,
+                $points = [
+                    $x, $y,
                     $x, $y + $length,
                     $x + $left, $y + $length - $bottom,
-                    $x + $left, $y + $top];
+                    $x + $left, $y + $top
+                ];
                 $this->_canvas->polygon($points, $color, null, null, true);
                 break;
 
             case "right":
-                $points = [$x, $y,
+                $points = [
+                    $x, $y,
                     $x, $y + $length,
                     $x - $right, $y + $length - $bottom,
-                    $x - $right, $y + $top];
+                    $x - $right, $y + $top
+                ];
                 $this->_canvas->polygon($points, $color, null, null, true);
                 break;
 

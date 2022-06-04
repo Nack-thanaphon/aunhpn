@@ -1,10 +1,12 @@
 <?php
+
 /**
  * @package dompdf
  * @link    http://dompdf.github.com/
  * @author  Benj Carson <benjcarson@digitaljunkies.ca>
  * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
  */
+
 namespace Dompdf\FrameDecorator;
 
 use Dompdf\Dompdf;
@@ -99,7 +101,7 @@ class Page extends AbstractFrameDecorator
      */
     public function calculate_bottom_page_edge(): void
     {
-        [, , , $cbh] = $this->get_containing_block();
+        [,,, $cbh] = $this->get_containing_block();
         $style = $this->get_style();
         $margin_bottom = (float) $style->length_in_pt($style->margin_bottom, $cbh);
 
@@ -191,8 +193,9 @@ class Page extends AbstractFrameDecorator
         // elements are treated as if wrapped in an anonymous block container
         // here. See https://www.w3.org/TR/CSS21/visuren.html#anonymous-block-level
         $prev = $frame->get_prev_sibling();
-        while ($prev && (($prev->is_text_node() && $prev->get_node()->nodeValue === "")
-            || $prev->get_node()->nodeName === "bullet")
+        while (
+            $prev && (($prev->is_text_node() && $prev->get_node()->nodeValue === "")
+                || $prev->get_node()->nodeName === "bullet")
         ) {
             $prev = $prev->get_prev_sibling();
         }
@@ -209,13 +212,15 @@ class Page extends AbstractFrameDecorator
             }
 
             $prev_last_child = $prev->get_last_child();
-            while ($prev_last_child && (($prev_last_child->is_text_node() && $prev_last_child->get_node()->nodeValue === "")
-                || $prev_last_child->get_node()->nodeName === "bullet")
+            while (
+                $prev_last_child && (($prev_last_child->is_text_node() && $prev_last_child->get_node()->nodeValue === "")
+                    || $prev_last_child->get_node()->nodeName === "bullet")
             ) {
                 $prev_last_child = $prev_last_child->get_prev_sibling();
             }
 
-            if ($prev_last_child
+            if (
+                $prev_last_child
                 && $prev_last_child->is_block_level()
                 && in_array($prev_last_child->get_style()->page_break_after, $page_breaks, true)
             ) {
@@ -336,14 +341,16 @@ class Page extends AbstractFrameDecorator
             // treated as if wrapped in an anonymous block container here. See
             // https://www.w3.org/TR/CSS21/visuren.html#anonymous-block-level
             $prev = $frame->get_prev_sibling();
-            while ($prev && (($prev->is_text_node() && $prev->get_node()->nodeValue === "")
-                || $prev->get_node()->nodeName === "bullet")
+            while (
+                $prev && (($prev->is_text_node() && $prev->get_node()->nodeValue === "")
+                    || $prev->get_node()->nodeName === "bullet")
             ) {
                 $prev = $prev->get_prev_sibling();
             }
 
             // Does the previous element allow a page break after?
-            if ($prev && ($prev->is_block_level() || $prev->get_style()->display === "-dompdf-image")
+            if (
+                $prev && ($prev->is_block_level() || $prev->get_style()->display === "-dompdf-image")
                 && $prev->get_style()->page_break_after === "avoid"
             ) {
                 Helpers::dompdf_debug("page-break", "after: avoid");
@@ -383,7 +390,6 @@ class Page extends AbstractFrameDecorator
             Helpers::dompdf_debug("page-break", "block: break allowed");
 
             return true;
-
         } // Inline frames (2):
         else {
             if ($frame->is_inline_level()) {
@@ -447,7 +453,7 @@ class Page extends AbstractFrameDecorator
 
                 return true;
 
-            // Table-rows
+                // Table-rows
             } else {
                 if ($display === "table-row") {
 
@@ -471,7 +477,8 @@ class Page extends AbstractFrameDecorator
                     if (!$prev) {
                         $prev_group = $frame->get_parent()->get_prev_sibling();
 
-                        if ($prev_group
+                        if (
+                            $prev_group
                             && in_array($prev_group->get_style()->display, Table::$ROW_GROUPS, true)
                         ) {
                             $prev = $prev_group->get_last_child();
@@ -515,7 +522,6 @@ class Page extends AbstractFrameDecorator
 
                         // Disallow breaks at row-groups: only split at row boundaries
                         return false;
-
                     } else {
                         Helpers::dompdf_debug("page-break", "? " . $display);
 
@@ -537,7 +543,8 @@ class Page extends AbstractFrameDecorator
      */
     function check_page_break(Frame $frame)
     {
-        if ($this->_page_full || $frame->_already_pushed
+        if (
+            $this->_page_full || $frame->_already_pushed
             // Never check for breaks on empty text nodes
             || ($frame->is_text_node() && $frame->get_node()->nodeValue === "")
         ) {
@@ -548,7 +555,9 @@ class Page extends AbstractFrameDecorator
         do {
             $display = $p->get_style()->display;
             if ($display == "table-row") {
-                if ($p->_already_pushed) { return false; }
+                if ($p->_already_pushed) {
+                    return false;
+                }
             }
         } while ($p = $p->get_parent());
 

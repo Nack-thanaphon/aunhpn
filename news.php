@@ -78,35 +78,36 @@
     }
 
 
-    $(document).ready(function() {
+    // $(document).ready(function() {
 
-        $.ajax({
-            type: "GET",
-            dataType: "json",
-            url: "https://www.info-aun-hpn.com/api/news_by_month.php",
-            data: {},
-            success: function(data) {
-                data = data.result;
-                for (var i = 0; i < data.length; i++) {
-                    news = `
-                        <li class="m-2">
-                        <a href="news_result.php?q=${data[i].date}" >
-                        <b class="p-0 m-0" id="news_title">${data[i].date}</b>
-                        </a><br>
-                        <small class="p-0 m-0" id="news_date"></small>
-                        </li>`
-                    $('#month_list').append(news);
-                    $('#mounth-header').html('ข่าวประจำเดือน');
+    //     $.ajax({
+    //         type: "GET",
+    //         dataType: "json",
+    //         url: "https://www.info-aun-hpn.com/api/news_by_month.php",
+    //         data: {},
+    //         success: function(data) {
+    //             data = data.result;
+    //             console.log(data)
+    //             for (var i = 0; i < data.length; i++) {
+    //                 news = `
+    //                     <li class="m-2">
+    //                     <a href="news_result.php?q=${data[i].date}" >
+    //                     <b class="p-0 m-0" id="news_title">${data[i].date}</b>
+    //                     </a><br>
+    //                     <small class="p-0 m-0" id="news_date"></small>
+    //                     </li>`
+    //                 $('#month_list').append(news);
+    //                 $('#mounth-header').html('ข่าวประจำเดือน');
 
-                };
-            },
+    //             };
+    //         },
 
-            error: function(err) {
-                console.log("bad", err)
+    //         error: function(err) {
+    //             console.log("bad", err)
 
-            }
-        })
-    })
+    //         }
+    //     })
+    // })
 </script>
 
 <div class="d-none d-sm-block">

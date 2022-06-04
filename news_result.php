@@ -3,7 +3,7 @@
 
 
 
-<div class="container">
+<div class="container-fluid">
     <div class="row p-0 m-1 d-flex justify-content-between">
         <div class="col-12 col-md-8 card p-3  mb-3">
             <h3 class="text-primary text-left">ข่าวสารประจำเดือน</h3>

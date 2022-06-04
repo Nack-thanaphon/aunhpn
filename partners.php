@@ -2,7 +2,7 @@
 <?php include './include/navbar.php'; ?>
 
 <body>
-    <div class="container">
+    <div class="container-fluid">
         <div class="row py-5">
 
 
@@ -20,14 +20,14 @@
                                     </ol>
                                 </nav> -->
                                 <ul class="nav nav-tabs" role="tablist ">
-                                    <li class="nav-item col-6 p-0 m-0 text-center ">
+                                    <li class="nav-item col-6 p-0 m-0 text-center " id="test">
                                         <a class="nav-link active py-3" data-toggle="tab" href="#tabs-1" role="tab">
                                             <h5 class="p-0 m-0 text-dark">Full Members</h5>
                                         </a>
 
                                     </li>
                                     <li class="nav-item col-6 p-0 m-0 text-center">
-                                        <a class="nav-link  py-3" data-toggle="tab" href="#tabs-2" role="tab">
+                                        <a class="nav-link  py-3" data-toggle="tab" href="#tabs-2"  role="tab">
                                             <h5 class="p-0 m-0 text-dark">Associate Members</h5>
                                         </a>
                                     </li>
@@ -63,6 +63,6 @@
 
 
     <?php
-    include 'include/script.php';
+    include './include/script.php';
     include "./include/footer.php"; ?>
 </body>
