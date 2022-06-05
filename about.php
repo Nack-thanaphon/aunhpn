@@ -3,22 +3,18 @@
 
 <div class="container-fluid">
     <div class="row py-5">
-        <div class="col-12 p-0 m-0">
-        </div>
-
-
         <div class=" col-md-3 col-12">
             <nav aria-label="">
                 <ol class="breadcrumb bg-transparent p-0 my-2">
-                    <li class="breadcrumb-item"><a href="#">หน้าหลัก</a></li>
+                    <li class="breadcrumb-item"><a href="./">หน้าหลัก</a></li>
                     <li class="breadcrumb-item"><a href="#">Our Mission</a></li>
 
                 </ol>
             </nav>
-            <div class="position-sticky bg-secondary  mb-5" style="top: 2rem;">
-                <div class=" bg-secondary text-black rounded">
-                    <div class="bg-dark p-3 text-white ">
-                        <h4 class="fst-italic text-center">Our Mission</h4>
+            <div class="position-sticky  mb-5" style="top: 2rem;">
+                <div class="text-black rounded">
+                    <div class="bg-white shadow-sm p-3 text-white ">
+                        <h4 class="fst-italic text-center text-dark">About us</h4>
                         <div class="nav flex-column nav-pills text-start" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                             <a class="nav-link active  text-uppercase" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true"> Our
                                 GOAL</a>

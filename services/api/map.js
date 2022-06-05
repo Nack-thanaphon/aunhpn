@@ -1,9 +1,6 @@
 // map marker
-var zoom2 = 3;
+var zoom2 = 4;
 
-$("#tabs-2").change(function () {
-    zoom2 = 8;
-});
 
 function initMap() {
     var options = {
@@ -223,7 +220,7 @@ function initMap() {
             '<p> Email : <a href = "-" target = "_blank">-</a></p>'
     });
     addMarker({
-        coords: { lat: 8.6415683, lng: 91.4598624 },
+        coords: { lat: 11.2309972, lng: 97.9732784 },
         content: '<h6 class="py-2 text-uppercase">Walailak University</h6>' +
             '<p> Contact : <a href = "-" target = "_blank">-</a></p>' +
             '<p> Email : <a href = "-" target = "_blank">-</a></p>'

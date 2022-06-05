@@ -1,7 +1,7 @@
 <!-- Footer -->
 <div id="cookieWow"></div>
 <footer class="text-start text-lg-start pt-2">
-    <div class="container text-start text-md-start mt-5">
+    <div class="container-fluid text-start text-md-start mt-5">
         <!-- Grid row -->
         <div class="row mt-3">
             <!-- Grid column -->
@@ -38,7 +38,7 @@
                 </p>
                 <a href="./about.php" class="text-dark"><b>Our goal</b></a>
                 </p>
-                <a href="./all_newsletter.php" class="text-dark"><b>Newsletter</b></a>
+                <a href="./newsletter.php" class="text-dark"><b>Newsletter</b></a>
                 </p>
             </div>
             <!-- Grid column -->

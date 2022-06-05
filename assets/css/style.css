@@ -3,6 +3,8 @@
     src: url(../font/RSU_Regular.ttf);
   }
 
+  @import url('https://fonts.googleapis.com/css2?family=Mitr:wght@500&display=swap');
+
 * {
     margin: 0%;
     padding: 0%;
@@ -24,7 +26,7 @@
 
 body {
     background-color: #f0f0f0;
-    font-family:RSU_light ;
+    font-family: 'Mitr', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
@@ -34,9 +36,7 @@ body {
     background-repeat: repeat;
 }
 
-p,a{
-    font-size: 1rem;
-}
+
 /* Navbar */
 
 #navbar-bg {
@@ -1026,109 +1026,6 @@ footer h6 {
 }
 
 
-
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
-
-.onoffswitch3
-{
-    background-color: #1D5671;
-    color: white;
-    position: relative; 
-    -webkit-user-select:none; 
-    -moz-user-select:none; 
-    -ms-user-select: none;
-}
-
-.onoffswitch3-checkbox {
-    display: none;
-}
-
-.onoffswitch3-label {
-    display: block; 
-    overflow: hidden; 
-    cursor: pointer;
-    
-    border: 0px solid #999999; 
-    border-radius: 0px;
-}
-
-.onoffswitch3-inner {
-    display: block;
-     width: 200%; 
-    margin-left: -100%;
-    -moz-transition: margin 0.3s ease-in 0s; 
-    -webkit-transition: margin 0.3s ease-in 0s;
-    -o-transition: margin 0.3s ease-in 0s; 
-    transition: margin 0.3s ease-in 0s;
-}
-
-.onoffswitch3-inner > span {
-    display: block; 
-    float: left; 
-    position: relative; 
-    width: 50%; 
-    height: 30px; 
-    padding: 0; 
-    line-height: 30px;
-    font-size: 14px; 
-    color: white; 
-
-    
-    -moz-box-sizing: border-box; 
-    -webkit-box-sizing: border-box; 
-    box-sizing: border-box;
-}
-
-.onoffswitch3-inner .onoffswitch3-active {
-    padding-left: 10px;
-
-}
-
-.onoffswitch3-inner .onoffswitch3-inactive {
-    width: 100px;
-    margin: 0 auto;
-    padding-left: 16px;
-    background-color: #00C7A3; color: #FFFFFF;
-
-}
-
-.onoffswitch3-switch {
-    display: block; width: 50%; 
-    margin: 0px; 
-    text-align: center;  
-    border: 0px solid #999999;
-    border-radius: 0px; 
-    position: absolute; 
-    top: 0; 
-    bottom: 0;
-}
-.onoffswitch3-active .onoffswitch3-switch {
-    background: #27A1CA; 
-    left: 0;
-    width: 160px;
-}
-.onoffswitch3-inactive{
-    background: #A1A1A1; 
-    right: 0;
-    width: 20px;
-}
-.onoffswitch3-checkbox:checked + .onoffswitch3-label .onoffswitch3-inner {
-    margin-left: 0;
-}
-
-.glyphicon-remove{
-    padding: 3px 0px 0px 0px;
-    color: #fff;
-    background-color: #000;
-    height: 25px;
-    width: 25px;
-    border-radius: 15px;
-    border: 2px solid #fff;
-}
-
-.scroll-text a {
-    color: #fefefefe;
-}
 .dataTables_length{
    display: flex;
    justify-content: flex-start;
@@ -1150,4 +1047,7 @@ footer h6 {
      #g_table_info { 
          display: none !important;
      }
+ }
+ #text-slide{
+     background-color: #B72245;
  }

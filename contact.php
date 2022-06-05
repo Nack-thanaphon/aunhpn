@@ -7,6 +7,13 @@
         <div class="col-12 col-md-12 mb-3 p-3 text-center">
             <h1 class="text-primary">ติดต่อเรา</h1>
             <small class="text-secondary">Asean University Health Promotion Network</small>
+            <nav aria-label="">
+                <ol class="breadcrumb bg-transparent p-0 my-2">
+                    <li class="breadcrumb-item"><a href="./">หน้าหลัก</a></li>
+                    <li class="breadcrumb-item"><a href="#">Contact</a></li>
+
+                </ol>
+            </nav>
         </div>
         <div class="col-12 col-md-12 mx-auto  p-1  ">
             <div class="row m-0 p-0">
