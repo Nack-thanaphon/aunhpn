@@ -1,14 +1,12 @@
 <?php include './include/header.php'; ?>
 <?php include './include/navbar.php'; ?>
 
-<div class="container-fluid">
-
     <div class="row m-0 p-0">
         <div class="col-12 bg-primary py-5 text-center text-white">
             <div class="py-2">
                 <h1 >Gallery</h1>
                 <small >Gallery : Asean University Health Promotion Network</small>
-              
+            
             </div>
             <!-- <small>Lorem, ipsum dolor./Lorem, ipsum dolor./Lorem, ipsum dolor./Lorem, ipsum dolor./</small> -->
         </div>
@@ -27,9 +25,6 @@
 
 
     </div>
-
-
-</div>
 
 <?php include 'include/script.php' ?>
 <script>

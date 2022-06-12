@@ -12,7 +12,7 @@
                             <div class="col-12 p-4 p-sm-5 text-white my-auto ">
                                 <h1 class="  font-weight-bold ">AUN-HPN</h1>
                                 <h5>ASEAN University Network - Health Promotion Network</h5>
-                                <p class="my-4">AUN–HPN is a regional network of people and universities working  <br> towards a better and healthier society. HPN (Health Promotion Network) <br> is a thematic network of AUN (ASEAN University Network).</p>
+                                <p class="my-4">AUN–HPN is a regional network of people and universities working <br> towards a better and healthier society. HPN (Health Promotion Network) <br> is a thematic network of AUN (ASEAN University Network).</p>
                                 <br>
                                 <a href="./about.php" class="btn btn-primary text-white  col-12 col-sm-3">
                                     <p class="text-uppercase font-weight-bold p-0 m-0">Learn More</p>
@@ -82,7 +82,7 @@
                                 <h5 class="text-uppercase font-weight-bold p-0 m-0">Newsupdate</h5>
                             </div>
                             <div class="col-6 text-right m-0 p-0 ">
-                                <a href="./news.php">อ่านทั้งหมด</a>
+                                <a href="./news.php">More</a>
                             </div>
                         </div>
                         <div class="row p-0 m-0 " id="news">
@@ -99,7 +99,7 @@
                                 <h5 class="text-uppercase font-weight-bold p-0 m-0">Download</h5>
                             </div>
                             <div class="col-6 text-right m-0 p-0 ">
-                                <a href="./file.php">อ่านทั้งหมด</a>
+                                <a href="./file.php">More</a>
                             </div>
                         </div>
                         <ul class="" id="download">
@@ -116,7 +116,7 @@
                                 <h5 class="text-uppercase font-weight-bold p-0 m-0">Activity</h5>
                             </div>
                             <div class="col-6 text-right m-0 p-0 ">
-                                <a href="./activity.php">อ่านทั้งหมด</a>
+                                <a href="./activity.php">More</a>
                             </div>
                         </div>
                         <ul class="" id="activity">
@@ -131,9 +131,9 @@
             <div class="col-12  p-0   my-3 ">
                 <div class="row  h-100 m-0 text-center py-4 ">
                     <div class="col-12 col-sm-8 mx-auto  text-primary  ">
-                        <h2 class="font-weight-bold text-uppercase ">ค้นหา</h2>
-                        <h4>ท่านสามารถค้นหาได้แล้วที่นี้</h4>
-                        <small class="text-secondary">การประชุม เอกสาร กิจกรรม ข่าวสาร</small><br>
+                        <h2 class="font-weight-bold text-uppercase ">FIND</h2>
+                        <h4>Find Your Topic As you Want</h4>
+                        <small class="text-secondary">Conference Document Activity Newsupdate</small><br>
 
 
                         <form id="search" method="POST" class="my-4" action="./search_result.php">

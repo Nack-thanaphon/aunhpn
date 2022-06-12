@@ -1068,3 +1068,7 @@ height: 550px;
     background-color: #B72245;
 
  }
+
+ #text-slide >a{
+    text-decoration: none;
+ }
