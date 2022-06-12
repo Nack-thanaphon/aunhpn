@@ -6,7 +6,7 @@
 <div class="container-fluid">
     <div class="row p-0 m-1 d-flex justify-content-between">
         <div class="col-12 col-md-8 card p-3  mb-3">
-            <h3 class="text-primary text-left">ข่าวสารประจำเดือน</h3>
+            <h3 class="text-primary text-left">Monthly News</h3>
             <h3 id="news_year" class="text-secondary font-weight-bold"></h3>
 
             <small class="text-secondary">News Update : Asean University Health Promotion Network</small>

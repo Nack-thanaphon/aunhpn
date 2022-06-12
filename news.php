@@ -2,10 +2,10 @@
 <?php include './include/navbar.php'; ?>
 
 <div class="row p-0 m-0  d-flex justify-content-between">
-    <div class="col-12 bg-primary py-5 text-center text-white">
+    <div class="col-12 m-0 p-0 bg-primary py-5 text-center text-white">
         <div class="py-2">
-            <h1 class="font-weight-bold">ข่าวสารประจำเดือน</h1>
-            <small >Newsupdate : Asean University Health Promotion Network</small>
+            <h1 class="font-weight-bold">Monthly News</h1>
+            <small>Newsupdate : Asean University Health Promotion Network</small>
             <hr>
         </div>
         <!-- <small>Lorem, ipsum dolor./Lorem, ipsum dolor./Lorem, ipsum dolor./Lorem, ipsum dolor./</small> -->
