@@ -6,13 +6,13 @@
     <div class="container-fluid m-0 p-0 mx-auto mb-3">
         <div class="row m-0 p-0 ">
             <div class="col-12 m-0 p-0">
-                <div class="row my-0 my-sm-3 m-0 p-0">
-                    <div class="col-12 col-sm-8  main_card">
+                <div class="row my-0  m-0 p-0 ">
+                    <div class="col-12 col-sm-12 main_card">
                         <div class="row main_card_bg ">
-                            <div class="col-12 p-4 p-sm-5 text-white  ">
+                            <div class="col-12 p-4 p-sm-5 text-white my-auto ">
                                 <h1 class="  font-weight-bold ">AUN-HPN</h1>
                                 <h5>ASEAN University Network - Health Promotion Network</h5>
-                                <p class="my-4">AUN–HPN is a regional network of people and universities working towards a better and healthier society. HPN (Health Promotion Network) is a thematic network of AUN (ASEAN University Network).</p>
+                                <p class="my-4">AUN–HPN is a regional network of people and universities working  <br> towards a better and healthier society. HPN (Health Promotion Network) <br> is a thematic network of AUN (ASEAN University Network).</p>
                                 <br>
                                 <a href="./about.php" class="btn btn-primary text-white  col-12 col-sm-3">
                                     <p class="text-uppercase font-weight-bold p-0 m-0">Learn More</p>
@@ -21,26 +21,11 @@
 
                         </div>
                     </div>
-
-                    <div class="col-12 col-sm-4  p-0 pl-0  pl-sm-3 d-none d-sm-block ">
-                        <div class="about_card h-100">
-
-                            <div class="row main_card_bg  h-100 m-0 p-0 patt  ">
-                                <a href="./about.php" class="col-12 p-5 text-white text-center m-auto ">
-                                    <h2 class="text-uppercase   font-weight-bold ">About us</h2>
-                                    <small>Our Duty and Responsibility</small>
-
-                                </a>
-                            </div>
-
-                        </div>
-                    </div>
-
                 </div>
             </div>
         </div>
         <div class="row m-0 p-0">
-            <div class="col-12 col-sm-8 my-0  my-sm-3  d-none d-sm-block">
+            <div class="col-12  my-0  d-none d-sm-block">
                 <div class="row " id="banner">
                     <div class="col-12 m-0 p-0 ">
                         <div class="slideshow"></div>
@@ -48,15 +33,40 @@
 
                 </div>
             </div>
-            <div class="col-12 col-sm-4  p-0 pl-0  pl-sm-3 my-0 my-sm-3 d-none d-sm-block">
-                <div class="member_card h-100">
-                    <div class="row main_card_bg m-0 h-100 p-0 patt text-center">
-                        <div class="col-12 m-auto  py-5 py-sm-0  text-white  ">
-                            <a href="./partners.php" class=" w-100 my-2 py-1 text-center ">
-                                <h2 class="text-uppercase font-weight-bold text-white ">our member</h2>
-                                <small class="text-light">Asean University Network - Health Promotion Network</small> <br>
-                                <small class="text-light">Membership & Team</small>
-                            </a>
+        </div>
+        <div class="row m-0 p-0">
+            <div class="col-12 col-sm-6 p-0   my-3  shadow-sm">
+                <div class="row bg-light h-100   m-0 p-0 m-1 ">
+                    <div class="col-12 py-3 p-sm-4  text-dark  ">
+                        <div class="row m-0 p-0 d-flex justify-content-between mb-3">
+                            <hr>
+                            <div class="col-12  m-0 p-0 text-center">
+                                <h5 class="text-uppercase  font-weight-bold p-0 m-0">About us</h5>
+                                <small>Our Duty and Responsibility</small>
+                                <br>
+                                <a href="./about.php">Readmore</a>
+                                <img src="./img//bg/Team goals-pana.svg" class="p-3" width="auto" alt="">
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6  p-0 pl-0  my-3  shadow-sm">
+                <div class="row bg-light h-100  m-0 p-0  m-1">
+                    <div class="col-12 py-3 p-sm-4 text-dark  ">
+                        <div class="row m-0 p-0 d-flex justify-content-between mb-3">
+                            <hr>
+                            <div class="col-12  m-0 p-0 text-center ">
+                                <h5 class="text-uppercase  font-weight-bold p-0 m-0">Our Member</h5>
+                                <small>
+                                    30 Core Members and 10 Associate Members
+                                </small>
+                                <br>
+                                <a href="./partners.php">Readmore</a>
+                                <img src="./img//bg/Picture1.png" class="p-3" width="100%" alt="">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -142,8 +152,6 @@
                 </div>
             </div>
         </div>
-    </div>
-    </div>
     </div>
 
     <?php

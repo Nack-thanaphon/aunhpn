@@ -4,10 +4,16 @@
 <div class="container-fluid">
 
     <div class="row m-0 p-0">
+        <div class="col-12 bg-primary py-5 text-center text-white">
+            <div class="py-2">
+                <h1 >Gallery</h1>
+                <small >Gallery : Asean University Health Promotion Network</small>
+              
+            </div>
+            <!-- <small>Lorem, ipsum dolor./Lorem, ipsum dolor./Lorem, ipsum dolor./Lorem, ipsum dolor./</small> -->
+        </div>
         <div class="col-12 col-md-12 col-sm-12 card p-3 p-sm-5 text-sm-center">
-            <h1 class="text-primary">Gallery</h1>
-            <small class="text-secondary">Gallery : Asean University Health Promotion Network</small>
-            <hr>
+
             <div class="row my-4 m-0 p-0">
                 <div class="col-12 m-0 p-0">
                     <table id="g_table" class="p-0 m-0 table table-hover w-100" width="100%">

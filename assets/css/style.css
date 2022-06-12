@@ -10,7 +10,7 @@
     padding: 0%;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    font-weight: 400;
+    font-weight: 200;
 }
 
 
@@ -279,7 +279,6 @@ body>#overlay {
 /* ================================== *\
       Mediaqueries
   \* ================================== */
-
 
 /* Google translate */
 
@@ -996,7 +995,6 @@ footer h6 {
     list-style: none;
     margin: 20px auto;
 }
-
 .main_card{
    
     background-color: rgba(2, 2, 2);
@@ -1006,25 +1004,41 @@ footer h6 {
     background-repeat: no-repeat;
 }
 
-.member_card{
-    background-color: rgba(2, 2, 2);
-    background-image: url('https://img.freepik.com/free-vector/solidarity-concept-illustration_114360-6286.jpg?t=st=1651978307~exp=1651978907~hmac=12927bd0bca4b83f0db5e703e182f98cae74206684afe25d9b038c50734ec732&w=900');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
 
-.about_card{
-    background-color: rgba(2, 2, 2);
-    background-image: url('https://img.freepik.com/free-vector/personal-goals-concept-illustration_114360-5616.jpg?t=st=1651978212~exp=1651978812~hmac=5de9ead876e8d0a6e8b945b8c4f262755cf906d850e61ffb5aaa412aac823f63&w=740');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
+
 .main_card_bg{
+height: 550px;
     background-color: rgba(2, 2, 2,0.5);
 }
 
+.marquee-parent {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 30px;
+  }
+  .marquee-child {
+    display: block;
+    width: 147px;
+    /* width of your text div */
+    height: 30px;
+    /* height of your text div */
+    position: absolute;
+    animation: marquee 5s linear infinite; /* change 5s value to your desired speed */
+  }
+  .marquee-child:hover {
+    animation-play-state: paused;
+    cursor: pointer;
+  }
+  @keyframes marquee {
+    0% {
+      left: 100%;
+    }
+    100% {
+      left: -147px /* same as your text width */
+    }
+  }
+  
 
 .dataTables_length{
    display: flex;
@@ -1048,6 +1062,9 @@ footer h6 {
          display: none !important;
      }
  }
- #text-slide{
-     background-color: #B72245;
+ #text-slide{  
+   
+
+    background-color: #B72245;
+
  }

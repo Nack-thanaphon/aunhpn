@@ -23,5 +23,4 @@
     <script id="cookieWow" type="text/javascript" src="https://cookiecdn.com/configs/wbAdhLk5RQbJZQgWf331r75m" data-cwcid="wbAdhLk5RQbJZQgWf331r75m"></script>
     <link rel="stylesheet" href="./assets/datatables-bs4/css/dataTables.bootstrap4.min.css">
     <link rel="stylesheet" href="./assets/datatables-responsive/css/responsive.bootstrap4.min.css">
-
 </head>

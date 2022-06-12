@@ -1,21 +1,6 @@
-<div class=" top-bar py-2 ">
-    <div class="col-6  my-auto text-left ">
-        <a class="text-white" href="tel:+662-4419044">
-            <i class="fas fa-phone-alt">
-                +662-4419040-3 Ext.72</i>
-        </a>
-    </div>
-    <div class="col-6 p-0 my-auto text-right">
-        <span id="google_translate_element"></span>
-    </div>
-</div>
+<nav class="navbar navbar-expand-md navbar-light  bg-dark text-white  " id="navbar-bg">
 
-
-<nav class="navbar navbar-expand-md navbar-light  bg-dark text-white  py-2" id="navbar-bg">
-
-
-    <div class="container-fluid  ">
-
+    <div class="container-fluid py-2 ">
         <a class="navbar-brand d-flex justify-content-between " href="./">
             <!-- <img class="d-none d-sm-block" src="./img/logo/logo2.png" alt=""> -->
             <img width="50px" height="50px" class="m-auto d-block" src="./img/logo/Logo.png" alt="">
@@ -74,18 +59,11 @@
 </nav>
 
 
-<div class="col-12 py-1 text-white my-auto d-none d-sm-block" id="text-slide">
-
+<div class="text-center" id="text-slide">
     <marquee class="mt-2" behavior='scroll' direction='left' scrollamount='6'>
-        <a class="">
-            <h4>
-                Greater :
-                <span class="glyphicon glyphicon-forward">
-                    Welcome to AUN-HPN | ASEAN University Network - Health Promotion Network
-                </span>
-
-            </h4>
+        <a href="https://hurs.mahidol.ac.th" class="text-white" target="blank">
+            <h4><span class="text-warning">Open Healthy University Rating Systems (HURS)</span> from August 15, 2022 to November 16, 2022</h4>
         </a>
-
     </marquee>
+
 </div>

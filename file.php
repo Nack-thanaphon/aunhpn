@@ -2,9 +2,14 @@
 <?php include './include/navbar.php'; ?>
 
 <div class="row m-0 p-0">
+    <div class="col-12 bg-primary py-5 text-center text-white">
+        <div class="py-2">
+            <h1 class=" font-weight-bold">Document</h1>
+            <small class="">Document : Asean University Health Promotion Network</small>
+        </div>
+        <!-- <small>Lorem, ipsum dolor./Lorem, ipsum dolor./Lorem, ipsum dolor./Lorem, ipsum dolor./</small> -->
+    </div>
     <div class="col-12 col-md-12 col-sm-12 card p-3 p-sm-5 text-sm-center">
-        <h1 class="text-primary font-weight-bold">Document</h1>
-        <small class="text-secondary">Document : Asean University Health Promotion Network</small>
 
         <div class="row my-4 m-0 p-0">
             <div class="col-12 m-0 p-0">

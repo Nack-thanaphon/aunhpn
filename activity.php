@@ -4,18 +4,16 @@
 
 
 <div class="row m-0 p-0">
-
+    <div class="col-12 bg-primary py-5 text-center text-white">
+        <div class="py-2 align-center">
+            <h1 class="font-weight-bold">Activity</h1>
+            <small >Activity : Asean University Health Promotion Network</small>
+           
+        </div>
+        <!-- <small>Lorem, ipsum dolor./Lorem, ipsum dolor./Lorem, ipsum dolor./Lorem, ipsum dolor./</small> -->
+    </div>
     <div class="col-12 col-md-12 col-sm-12 card p-3 p-sm-5 text-sm-center">
-        <h1 class="text-primary font-weight-bold">Activity</h1>
-        <small class="text-secondary">Activity : Asean University Health Promotion Network</small>
-        <hr>
-        <nav aria-label="">
-            <ol class="breadcrumb bg-transparent p-0 my-2">
-                <li class="breadcrumb-item"><a href="./">หน้าหลัก</a></li>
-                <li class="breadcrumb-item"><a href="#">Activity</a></li>
 
-            </ol>
-        </nav>
         <div class="row my-4 m-0 p-0">
             <div class="col-12 m-0 p-0">
                 <table id="g_table" class="p-0 m-0 table table-hover w-100" width="100%">

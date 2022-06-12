@@ -2,8 +2,14 @@
 <?php include 'include/navbar.php'; ?>
 
 <div class="container-fluid">
-    <div class="row py-5">
-        <div class=" col-md-3 col-12">
+    <div class="row ">
+        <div class="col-12 bg-primary py-5 text-center text-white">
+            <div class="py-2">
+                <h1>ABOUT US</h1>
+            </div>
+            <!-- <small>Lorem, ipsum dolor./Lorem, ipsum dolor./Lorem, ipsum dolor./Lorem, ipsum dolor./</small> -->
+        </div>
+        <div class=" col-md-3 col-12 mt-5">
             <nav aria-label="">
                 <ol class="breadcrumb bg-transparent p-0 my-2">
                     <li class="breadcrumb-item"><a href="./">หน้าหลัก</a></li>

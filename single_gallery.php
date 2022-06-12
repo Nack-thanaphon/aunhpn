@@ -2,8 +2,13 @@
 <?php include './include/navbar.php'; ?>
 
 <div class="container-fluid">
-
-    <div class="row m-0 p-0">
+    <div class="row ">
+        <div class="col-12 bg-primary py-5 text-center text-white">
+            <div class="py-2">
+                <h3>Gallery</h3>
+            </div>
+            <!-- <small>Lorem, ipsum dolor./Lorem, ipsum dolor./Lorem, ipsum dolor./Lorem, ipsum dolor./</small> -->
+        </div>
         <div class="col-12 col-md-12 col-sm-12 card p-3 p-sm-5 text-sm-center">
 
             <div class="py-3">
